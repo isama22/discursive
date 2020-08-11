@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
-import NavBar from '../../components/NavBar/NavBar'
+
 
 
 class App extends Component {
@@ -12,7 +12,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header><NavBar /></header>
 
         <Switch>
           <Route

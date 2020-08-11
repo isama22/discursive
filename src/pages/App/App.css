@@ -4,12 +4,13 @@ html, body {
   /* background-image: url(https://i.postimg.cc/TPxg8YQV/discursive2.png);
   background-size: 100%;
   background-repeat: no-repeat; */
+  font-family: monospace;
 }
 .App {
   text-align: center;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: flex-end;
-}
+} */
