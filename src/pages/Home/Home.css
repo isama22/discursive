@@ -1,12 +1,22 @@
+.macintosh {
+    background-image: url(https://i.postimg.cc/3wG4KKLY/Screen-Shot-2020-08-11-at-2-20-47-AM.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: 93%;
+    height: 1500px;
+    margin-left: 120px;
+}
+
 .Home {
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin: 50px 50px 20px 50px; */
 
-    width: 900px;
+    width: 930px;
     height: 700px;
-    margin-left: 250px;
+    margin-left: 150px;
+    margin-top: 175px;
     background-image: url(https://i.postimg.cc/kMYQpdhP/Screen-Shot-2020-06-19-at-4-24-02-PM.png);
     background-size: cover;
 }

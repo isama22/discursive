@@ -2,17 +2,25 @@ import React, { Component } from 'react';
 import './Home.css';
 import {Link} from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar'
+import userService from '../../utils/userService';
 
 class Home extends Component {
+    state = {
+        user: userService.getUser(),
+        // posts: []
+      }
     render() {
         return (
             <>
+            <div className="macintosh">
+<br/>
+
                 <div className="Home">
                     <div className="image">
                     <div className="main-container">
 
                         <div className="side-bar">   
-                        <div className="nav"><NavBar /></div>
+                        <div className="nav"><NavBar user={this.state.user}/></div>
                             
                             <div className="info">
                                 <Link to="/"><img className="title-photo" src="https://i.postimg.cc/3xjzy6Pd/Screen-Shot-2020-06-18-at-7-17-56-PM.png" alt=""></img></Link>
@@ -41,6 +49,7 @@ class Home extends Component {
                         </div>
                     </div>
                     </div>
+                </div>
                 </div>
             </>
         );
