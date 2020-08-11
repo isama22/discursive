@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 50px 20px 50px;
+    /* margin: 50px 50px 20px 50px; */
+
+    width: 900px;
+    height: 700px;
+    margin-left: 250px;
+    background-image: url(https://i.postimg.cc/kMYQpdhP/Screen-Shot-2020-06-19-at-4-24-02-PM.png);
+    background-size: cover;
 }
 .nav {
     margin: 10px 10px 10px 20px;
@@ -19,9 +25,10 @@
     background-color: #9D7979;
     width: 700px;
     height: 500px;
-    border: 1px solid #FFCE9F;
+    border: 1px solid #6d5454;
     display: flex;
     flex-direction: row;
+    box-shadow:20px 20px 50px #65cca9;
 }
 
 .side-bar {
@@ -32,7 +39,7 @@
 .info {
     width: 140px;
     height: 110px;
-    border: 1px solid #14FFEF;
+    border: 1px solid #6d5454;
     color: blue;
     /* margin-top: 30px; */
     margin-left: 15px;
@@ -48,7 +55,7 @@
 .info-body {
     width: 140px;
     height: 320px;
-    border: 1px solid #14FFEF;
+    border: 1px solid #6d5454;
     color: blue;
     margin-top: 20px;
     margin-left: 15px;
@@ -64,7 +71,7 @@
 .post-container {
     width: 500px;
     height: 470px;
-    border: solid 1px #14FFEF;
+    border: solid 1px #6d5454;
     margin-left: 20px;
     margin-top: 15px;
     overflow-y: scroll;
