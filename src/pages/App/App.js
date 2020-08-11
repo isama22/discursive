@@ -4,14 +4,14 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
-import userService from '../../utils/userService';
+
 
 
 
 class App extends Component {
 
   state = {
-    user: userService.getUser(),
+
     // posts: []
   }
   render() {

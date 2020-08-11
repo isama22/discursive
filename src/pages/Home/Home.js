@@ -9,6 +9,10 @@ class Home extends Component {
         user: userService.getUser(),
         // posts: []
       }
+      handleLogout = () => {
+        userService.logout();
+        this.setState({ user: null });
+      }
     render() {
         return (
             <>
@@ -20,7 +24,7 @@ class Home extends Component {
                     <div className="main-container">
 
                         <div className="side-bar">   
-                        <div className="nav"><NavBar user={this.state.user}/></div>
+                        <div className="nav"><NavBar user={this.state.user} handleLogout={this.handleLogout}/></div>
                             
                             <div className="info">
                                 <Link to="/"><img className="title-photo" src="https://i.postimg.cc/3xjzy6Pd/Screen-Shot-2020-06-18-at-7-17-56-PM.png" alt=""></img></Link>
