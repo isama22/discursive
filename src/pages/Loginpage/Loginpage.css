@@ -1,0 +1,26 @@
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.LoginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: 300px;
+    margin: 0px;
+}
+
+.login-div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    background-color: cyan;
+    width: 300px;
+}

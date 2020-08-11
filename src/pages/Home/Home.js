@@ -20,17 +20,13 @@ class Home extends Component {
                             </div>
                             <div className="info-body">
                                 <p className="descriptions">source material</p>
-                                {/* <p className="descriptions">music</p>
-                                <p className="descriptions">ideas</p>
-                                <p className="descriptions">resouces</p>
-                                <p className="descriptions">poetry</p> */}
 
                             </div>  
                         </div>
                         
                         <div className="post-container">
                         <div className="post">
-                            <div className="post-header"><p>doing my homework today</p></div>
+                            <div className="post-header"><p>research</p></div>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
                         </div>
                         <div className="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem</div>

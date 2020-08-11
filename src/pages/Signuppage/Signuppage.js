@@ -6,9 +6,11 @@ import SignupForm from '../../components/SignupForm/SignupForm'
 const Signuppage = (props) => {
 
   return (
-    <div className="Signup-page">
-<p>sign up </p>
-<SignupForm />
+    <div className="signup-container">
+      <div className="Signup-page">
+        <p>sign up page</p>
+        <SignupForm />
+      </div>
     </div>
 
   )

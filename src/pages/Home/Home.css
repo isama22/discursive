@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 50px 50px 50px;
+    margin: 50px 50px 20px 50px;
 }
 .nav {
     margin: 10px 10px 10px 20px;
@@ -14,7 +14,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-left: 80px; */
 }
 .main-container {
     background-color: #9D7979;
