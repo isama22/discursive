@@ -17,7 +17,7 @@ class Home extends Component {
                         <div className="image">
                             <div className="nav">
                                 <NavBar 
-                                user={this.props.state.user} 
+                                user={this.props.user} 
                                 handleLogout={this.props.handleLogout} 
                                 handleSignupOrLogin={this.props.handleSignupOrLogin}
                                 /></div>
