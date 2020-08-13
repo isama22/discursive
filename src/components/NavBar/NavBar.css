@@ -1,29 +1,21 @@
-.NavBar {
-    /* display: flex;
-    justify-content: center; */
+.NavBar-link {
+  text-decoration: none;
+  color: blue;
+}
 
-  }
-  
-  .NavBar-link {
-    text-decoration: none;
-    color: blue;
-  }
+.NavBar-link:hover {
+  font-weight: bold;
+}
 
-  .NavBar-link:hover {
-    font-weight: bold;
+.NavBar-welcome {
+  color: black;
+  /* margin-top: 10px; */
+}
 
-  }
-
-  .NavBar-welcome {
-    color: black;
-    /* margin-top: 10px; */
-
-  }
-
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    width: 300px;
-    padding-bottom: 10px;
-  }
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 300px;
+  padding-bottom: 10px;
+}

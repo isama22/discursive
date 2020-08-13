@@ -26,7 +26,7 @@
 .nav {
     /* margin: 10px 10px 10px 20px; */
     margin-top: 30px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .image {
     background-color: aquamarine;
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     box-shadow:20px 20px 50px #65cca9;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .side-bar {
@@ -55,7 +55,7 @@
 .info {
     width: 140px;
     height: 110px;
-    border: 1px solid #6d5454;
+    /* border: 1px solid #6d5454; */
     color: blue;
     margin-top: 15px;
     margin-left: 15px;
@@ -71,7 +71,7 @@
 .info-body {
     width: 140px;
     height: 330px;
-    border: 1px solid #6d5454;
+    /* border: 1px solid #6d5454; */
     color: blue;
     margin-top: 20px;
     margin-left: 15px;
@@ -85,18 +85,19 @@
 }
 
 .post-container {
-    width: 500px;
-    height: 470px;
-    border: solid 1px #6d5454;
-    margin-left: 20px;
-    margin-top: 15px;
+    width: 530px;
+    height: 500px;
+    /* border-left: solid 1px #6d5454; */
+    background-color: #ab9b7d;
+    /* margin-left: 20px;
+    margin-top: 15px; */
     overflow-y: scroll;
 }
 
 .post {
-    width: 480px;
+    width: 510px;
     height: 150px;
-    border: solid 1px blue;
+    border: solid 1px #6d5454;
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -107,8 +108,12 @@
 }
 
 .post-header {
-    border-bottom: 1px blue solid;
+    border-bottom: 1px #6d5454 solid;
     text-align: left;
     padding-left: 10px;
 
+}
+
+.post-item {
+    background-color: aqua;
 }
