@@ -68,7 +68,7 @@ class AddPostPage extends Component {
                     type="submit"
                     disabled={this.state.invalidForm}
                 >
-                    Add Post
+                    Add
                 </button>
             </div>
           </form>

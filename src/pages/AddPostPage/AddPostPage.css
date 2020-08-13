@@ -1,9 +1,50 @@
 .add-post-page {
     background-color: beige;
-    height: 500px;
+    height: 400px;
     width: 500px;
-    margin-left: 300px;
+    margin: 100px 0px 0px 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.add-service-form {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px black;
+}
+
+.form-item {
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20px;
+    /* padding: 20px; */
+    text-align: left;
+}
+.form-label {
+    /* display: flex;
+    justify-content: flex-start; */
+    background-color: wheat;
+    padding: 5px;
+}
+.add-links {
+    margin-bottom: 20px;
+}
+.cancel-button {
+    margin: 20px 20px 20px 0px;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: black;
+    font-size: 12px;
+    width: 60px;
 }

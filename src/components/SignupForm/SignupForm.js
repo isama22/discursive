@@ -45,34 +45,60 @@ class SignupForm extends Component {
     return (
       <div className="signup-form">
         <header className="header-footer">Sign Up</header>
+        <div className="signup-div">
         <form className="form-horizontal" onSubmit={this.handleSubmit} >
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Name" value={this.state.name} name="name" onChange={this.handleChange} />
+            <label className='form-label'>name</label>
+              <input 
+              type="text" 
+              className="form-control" 
+              value={this.state.name} 
+              name="name" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="email" className="form-control" placeholder="Email" value={this.state.email} name="email" onChange={this.handleChange} />
+            <label className='form-label'>email</label>
+              <input 
+              type="email" 
+              className="form-control" 
+              value={this.state.email} 
+              name="email" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange} />
+            <label className='form-label'>password</label>
+              <input 
+              type="password" 
+              className="form-control" 
+              value={this.state.password} 
+              name="password" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Confirm Password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
+            <label className='form-label'>confirm password</label>
+              <input 
+              type="password" 
+              className="form-control" 
+              value={this.state.passwordConf} 
+              name="passwordConf" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
-            <div className="col-sm-12 text-center">
-              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
-              <Link to='/'>Cancel</Link>
+            <div className="signup-links">
+              <Link className="cancel-button" to='/'>Cancel</Link>
+              <button className="login-btn" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
             </div>
           </div>
         </form>
+        </div>
       </div>
     );
   }

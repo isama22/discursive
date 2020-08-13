@@ -26,14 +26,15 @@ class Home extends Component {
                                 <div className="side-bar">
 
                                     <div className="info">
-                                        <Link to="/"><img className="title-photo" src="https://i.postimg.cc/3xjzy6Pd/Screen-Shot-2020-06-18-at-7-17-56-PM.png" alt=""></img></Link>
+                                        <Link to="/"><img className="title-photo" src="https://i.postimg.cc/3wG4KKLY/Screen-Shot-2020-08-11-at-2-20-47-AM.png" alt=""></img></Link>
 
                                     </div>
                                     <div className="info-body">
+                                        <hr className="hr"/>
                                         <Link className="add-service" to="/addpost">make a new post</Link>
-                                        <br/>
+                                        <br/><hr/>
                                         <Link className="add-service" to="/addpost">search by tag</Link>
-
+                                        <hr/>
 
 
 
