@@ -1,32 +1,29 @@
-/* .nav-bar {
-    width: 100px;
-    height: 50px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.link {
-    text-decoration: none;
-    color: #D7D85A;
-    margin: 10px;
-}
-
-.link:hover {
-    font-weight: bold;
-} */
-
 .NavBar {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 20px;
+    /* display: flex;
+    justify-content: center; */
+
   }
   
   .NavBar-link {
-    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+  }
+
+  .NavBar-link:hover {
+    font-weight: bold;
+
   }
 
   .NavBar-welcome {
     color: black;
+    /* margin-top: 10px; */
+
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 300px;
+    padding-bottom: 10px;
   }
