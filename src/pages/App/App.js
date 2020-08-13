@@ -6,6 +6,7 @@ import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
 import AddPostPage from '../../pages/AddPostPage/AddPostPage'
 import userService from '../../utils/userService';
+import * as postsAPI from '../../services/posts-api'
 
 
 class App extends Component {
@@ -21,6 +22,27 @@ class App extends Component {
   handleLogout = () => {
     userService.logout();
     this.setState({ user: null });
+}
+//posts functions//
+handleAddPost = async newPostData => {
+  const newPost = await postsAPI.create(newPostData)
+  this.setState(state => ({
+    posts: [...state.posts, newPost]
+  }),
+    () => this.props.history.push('/'))
+}
+handleGetAllPosts = async () => {
+  const posts = await postsAPI.getAll()
+  this.setState({ posts: posts })
+}
+//helper function//
+handleChange = e => {
+  this.setState({ [e.target.name]: e.target.value })
+}
+//lifecycle functions//
+async componentDidMount() {
+  const posts = await postsAPI.getAll()
+  this.setState({ posts })
 }
 
   render() {
