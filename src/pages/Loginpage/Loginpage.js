@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Loginpage.css';
+import userService from '../../utils/userService';
 
 class LoginPage extends Component {
   
@@ -10,11 +11,23 @@ class LoginPage extends Component {
   };
 
   handleChange = (e) => {
-    // TODO: implement in an elegant way
+    this.setState({
+      // Using ES2015 Computed Property Names
+      [e.target.name]: e.target.value
+    });
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      // Update to call login instead of signup
+      await userService.login(this.state);
+
+      this.props.handleSignupOrLogin();
+    } catch (err) {
+      // Use a modal or toast in your apps instead of alert
+      alert('Invalid Credentials!');
+    }
   }
 
   render() {

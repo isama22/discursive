@@ -1,22 +1,25 @@
 .macintosh {
-    background-image: url(https://i.postimg.cc/3wG4KKLY/Screen-Shot-2020-08-11-at-2-20-47-AM.png);
+    /* background-image: url(https://i.postimg.cc/3wG4KKLY/Screen-Shot-2020-08-11-at-2-20-47-AM.png);
     background-repeat: no-repeat;
     z-index: -1;
     background-size: 93%;
     height: 1500px;
-    margin-left: 120px;
+    margin-left: 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Home {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 50px 50px 20px 50px; */
+    margin: 0px 50px 0px 50px;
 
     width: 930px;
     height: 700px;
-    margin-left: 150px;
-    margin-top: 175px;
+    /* margin-left: 150px;
+    margin-top: 175px; */
     background-image: url(https://i.postimg.cc/kMYQpdhP/Screen-Shot-2020-06-19-at-4-24-02-PM.png);
     background-size: cover;
 }
@@ -64,7 +67,7 @@
 }
 .info-body {
     width: 140px;
-    height: 320px;
+    height: 270px;
     border: 1px solid #6d5454;
     color: blue;
     margin-top: 20px;
@@ -79,7 +82,7 @@
 }
 
 .post-container {
-    width: 500px;
+    width: 450px;
     height: 470px;
     border: solid 1px #6d5454;
     margin-left: 20px;
@@ -92,7 +95,7 @@
     height: 150px;
     border: solid 1px blue;
     margin-top: 10px;
-    margin-left: 70px;
+    margin-left: 30px;
     margin-bottom: 10px;
     overflow-y: scroll;
 
