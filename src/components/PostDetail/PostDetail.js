@@ -9,9 +9,8 @@ function PostDetail({ post }) {
         <>
     
             <div className="post-detail">
-                {/* <div className="post-header"><p>{post.title}</p></div>
-                <p className="post-body">{post.description}</p> */}
-                <p>details for post</p>
+                <div className="post-header"><p>{post.title}</p></div>
+                <p className="post-body">{post.description}</p>
             </div>
 
         </>

@@ -1,5 +1,8 @@
 .details-div {
     width: 530px;
-    height: 500px;
-    background-color: purple;
+
+}
+
+.details-onClick {
+    cursor: pointer;
 }
