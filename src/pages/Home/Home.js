@@ -50,17 +50,8 @@ class Home extends Component {
                                 </div>
 
                                 <div className="post-container">
-                                    <div className="post">
-                                        <div className="post-header"><p>research</p></div>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
-                        </div>
-                                    <div className="post">
-                                    <div className="post-header"><p>research</p></div>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
-                        </div>
+                   
+               
                                 <PostItem 
                                 posts={this.state.posts}
                                 />

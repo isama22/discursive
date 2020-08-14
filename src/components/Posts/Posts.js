@@ -5,11 +5,14 @@ function Posts({ post }) {
 
     return (
         <>
-        <div className='serviceflooritem'>
-            <p className='name'>ppp</p>
-            <p className='post-component'>{post.title}</p>
-            <p className='post-component'>{post.description}</p>
-        </div>
+
+            
+                <div className="post">
+                <div className="post-header"><p>{post.title}</p></div>
+                <p>{post.description}</p>
+                </div>
+         
+
         </>
     )
 }

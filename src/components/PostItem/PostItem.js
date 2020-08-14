@@ -7,8 +7,8 @@ class PostItem extends Component {
     render() {
         return (
             <>
-                <div className='post-component'>
-                    <p>mmm</p>
+                <div >
+               
                     {this.props.posts.map(post =>
                         <Posts
                             post={post}
