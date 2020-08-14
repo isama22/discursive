@@ -3,11 +3,16 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar'
 import PostItem from '../../components/PostItem/PostItem'
+import * as postsAPI from '../../services/posts-api'
 
 class Home extends Component {
     state = {
         posts: []
     }
+    async componentDidMount() {
+        const posts = await postsAPI.getAll()
+        this.setState({posts})
+      }
     render() {
    
 
@@ -56,8 +61,10 @@ class Home extends Component {
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
                         </div>
-                                    
-                                <PostItem posts={this.state.posts}/>
+                                <PostItem 
+                                posts={this.state.posts}
+                                />
+                                
                                 </div>
                             </div>
                         </div>
