@@ -39,7 +39,7 @@ class Home extends Component {
                                     </div>
                                     <div className="info-body">
                                         <hr className="hr"/>
-                                        <Link className="add-service" to="/addpost">make a new post</Link>
+                                        <Link className="add-service" to="/addpost">post something</Link>
                                         <br/><hr/>
                                         <Link className="add-service" to="/addpost">search by tag</Link>
                                         <hr/>

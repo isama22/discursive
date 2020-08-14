@@ -29,7 +29,7 @@
     margin-left: 60px;
 }
 .image {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 800px;
     height: 600px;
     display: flex;
@@ -43,7 +43,7 @@
     border: 1px solid #6d5454;
     display: flex;
     flex-direction: row;
-    box-shadow:20px 20px 50px #65cca9;
+    box-shadow:0px 0px 100px 20px #65cca9;
     margin-left: 50px;
 }
 
@@ -120,11 +120,11 @@
 
 .post-header {
     border-bottom: 1px #6d5454 solid;
-    text-align: left;
     padding-left: 10px;
 
 }
 
-.post-item {
+.post-body {
     background-color: aqua;
+    text-align: left;
 }
