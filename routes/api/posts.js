@@ -5,7 +5,7 @@ const postsCtrl = require('../../controllers/posts')
 router.get('/', postsCtrl.index)
 router.get('/:id', postsCtrl.show)
 
-// router.use(require('../../config/auth'))
+router.use(require('../../config/auth'))
 
 router.post('/', checkAuth, postsCtrl.create)
 // router.put('/:id', checkAuth, postsCtrl.update)

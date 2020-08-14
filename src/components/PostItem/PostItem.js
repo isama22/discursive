@@ -7,16 +7,13 @@ class PostItem extends Component {
     render() {
         return (
             <>
-              <div className="">
-                  
-                  {this.props.posts ? this.props.posts.map(post =>
+              <div className="post-component">
+                  {this.props.posts.map(post =>
                     <Posts
                       post={post} 
                       key={post._id}
                     />
-                    
-                    
-                  ): <p>no posts yet</p>}
+                  )}
               </div> 
             </>
         )

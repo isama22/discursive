@@ -5,7 +5,9 @@ import NavBar from '../../components/NavBar/NavBar'
 import PostItem from '../../components/PostItem/PostItem'
 
 class Home extends Component {
-
+    state = {
+        posts: []
+    }
     render() {
    
 
@@ -55,7 +57,7 @@ class Home extends Component {
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus provident atque fugiat maiores reprehenderit dicta inventore vitae, repudiandae labore facere, aspernatur ut! Enim obcaecati quia numquam debitis quae veniam? lorem
                         </div>
                                     
-                                <PostItem />
+                                <PostItem posts={this.state.posts}/>
                                 </div>
                             </div>
                         </div>

@@ -21,8 +21,9 @@ function Posts({ post }) {
                             <p className="location">{cities}</p>
                         </div> */}
                         <div className='serviceflooritem-detail-name'>
-                            <p className='post-component'>{post}</p>
-                            <p className='name'>post</p>
+                            <p className='name'>{post}</p>
+                            <p className='post-component'>{post.title}</p>
+                            <p className='post-component'>{post.description}</p>
                         </div>
                       
                     </div>
