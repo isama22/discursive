@@ -8,6 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    margin-left: 200px;
+    
 }
 
 .Home {
@@ -20,13 +23,17 @@
     height: 700px;
     /* margin-left: 150px;
     margin-top: 175px; */
-    background-image: url(https://i.postimg.cc/kMYQpdhP/Screen-Shot-2020-06-19-at-4-24-02-PM.png);
-    background-size: cover;
+    /* background-image: url(https://i.postimg.cc/kMYQpdhP/Screen-Shot-2020-06-19-at-4-24-02-PM.png);
+    background-size: cover; */
+    /* border-radius: 300px; */
 }
 .nav {
     /* margin: 10px 10px 10px 20px; */
     margin-top: 30px;
-    margin-left: 60px;
+    /* margin-left: 160px; */
+    display: flex;
+    justify-content: center;
+    z-index: 1;
 }
 .image {
     /* background-color: aquamarine; */
@@ -107,28 +114,4 @@
     /* margin-left: 20px;
     margin-top: 15px; */
     overflow-y: scroll;
-}
-
-.post {
-    width: 510px;
-    height: 150px;
-    border: solid 1px #6d5454;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-    overflow-y: scroll;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.post-header {
-    border-bottom: 1px #6d5454 solid;
-    padding-left: 10px;
-
-}
-
-.post-body {
-    /* background-color: aqua; */
-    text-align: left;
 }

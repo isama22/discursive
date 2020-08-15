@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
@@ -94,9 +94,13 @@ class App extends Component {
           <Route
             exact path="/addpost"
             render={() =>
+              userService.getUser() ?
               <AddPostPage
                 handleAddPost={this.handleAddPost}
               />
+              :
+              <Redirect to='/login' />
+          
             }
           />
         </Switch>
