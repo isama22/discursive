@@ -21,7 +21,13 @@
     white-space: pre-wrap;
     color: 	#731154;
 }
-
+.post-body-details {
+    text-align: left;
+    margin-left: 10px;
+    /* white-space: pre-line; */
+    white-space: pre-wrap;
+    color: 	#731154;
+}
 .details-div {
     width: 530px;
 }

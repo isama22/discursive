@@ -45,9 +45,9 @@ class Home extends Component {
                                             <Link className="add-service" to="/addpost">post something</Link>
                                         </div>
 
-                                        <div className="add-service" >
+                                        {/* <div className="add-service" >
                                             <Link className="add-service" to="/addpost">search by tag</Link>
-                                        </div>
+                                        </div> */}
 
 
                                         <Link to="/">

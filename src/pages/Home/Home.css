@@ -79,11 +79,15 @@
 .title-photo {
     width: 120px;
     height: 140px;
+
 }
 
 .second-photo {
     width: 120px;
     height: 140px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .info-body {
@@ -101,6 +105,7 @@
     text-decoration: none;
     /* color: aqua; */
     /* border-bottom: 1px solid red; */
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
     /* -webkit-text-stroke: 1px #ffe5ee; */
