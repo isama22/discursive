@@ -10,7 +10,6 @@
     align-items: center;
     position: fixed;
     margin-left: 200px;
-    
 }
 
 .Home {
@@ -18,7 +17,6 @@
     justify-content: center;
     align-items: center;
     margin: 0px 50px 0px 50px;
-
     width: 930px;
     height: 700px;
     /* margin-left: 150px;
@@ -27,30 +25,34 @@
     background-size: cover; */
     /* border-radius: 300px; */
 }
+
 .nav {
     /* margin: 10px 10px 10px 20px; */
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* margin-left: 160px; */
+    margin-right: 100px;
     display: flex;
     justify-content: center;
     z-index: 1;
 }
+
 .image {
     /* background-color: aquamarine; */
     width: 800px;
     height: 600px;
     display: flex;
     flex-direction: column;
-
 }
+
 .main-container {
-    background-color: #9D7979;
+    /* background-color: #9D7979; */
+    background-color: #d4cfbd;
     width: 700px;
     height: 500px;
-    border: 1px solid #6d5454;
+    /* border: 1px solid #6d5454; */
     display: flex;
     flex-direction: row;
-    box-shadow:0px 0px 100px 20px #65cca9;
+    box-shadow: 0px 0px 100px 20px #65cca9;
     /* box-shadow:0px 0px 100px 20px darkred; */
     margin-left: 50px;
 }
@@ -58,6 +60,7 @@
 .side-bar {
     display: flex;
     flex-direction: column;
+    /* background-color: #e4dfbd; */
 }
 
 .info {
@@ -72,10 +75,17 @@
     align-items: center;
     font-size: 12px;
 }
+
 .title-photo {
     width: 120px;
     height: 140px;
 }
+
+.second-photo {
+    width: 120px;
+    height: 140px;
+}
+
 .info-body {
     width: 140px;
     height: 230px;
@@ -85,20 +95,23 @@
     /* margin-left: 15px; */
     text-align: center;
 }
+
 .add-service {
     /* width: 140px; */
     text-decoration: none;
-    color: blue;
-    border-bottom: 1px solid red;
+    /* color: aqua; */
+    /* border-bottom: 1px solid red; */
     margin-bottom: 10px;
     padding: 5px;
-    -webkit-text-stroke: 1px blue;
-
+    /* -webkit-text-stroke: 1px #ffe5ee; */
+    -webkit-text-stroke: 1px #731154;
+    opacity: 60%;
 }
 
 .add-service:hover {
     font-weight: bold;
 }
+
 .descriptions {
     margin-top: 10px;
     margin-left: 10px;
@@ -110,7 +123,8 @@
     width: 530px;
     height: 500px;
     /* border-left: solid 1px #6d5454; */
-    background-color: #ab9b7d;
+    /* background-color: #ab9b7d; */
+    background-color: #e4dfbd;
     /* margin-left: 20px;
     margin-top: 15px; */
     overflow-y: scroll;

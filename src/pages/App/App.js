@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
+import Contact from '../../pages/Contact/Contact'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
 import AddPostPage from '../../pages/AddPostPage/AddPostPage'
@@ -95,14 +96,20 @@ class App extends Component {
             exact path="/addpost"
             render={() =>
               userService.getUser() ?
-              <AddPostPage
-                handleAddPost={this.handleAddPost}
-              />
-              :
-              <Redirect to='/login' />
-          
+                <AddPostPage
+                  handleAddPost={this.handleAddPost}
+                />
+                :
+                <Redirect to='/login' />
+
             }
           />
+          <Route
+            exact path="/contact"
+            render={() => (
+              <Contact
+              />
+            )}></Route>
         </Switch>
       </div>
     );
