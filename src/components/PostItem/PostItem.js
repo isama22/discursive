@@ -6,6 +6,7 @@ function PostItem({ post }) {
     return (
         <>
             <Link
+            className="detail-link"
                 to={{
                     pathname: '/postdetail',
                     state: { post }

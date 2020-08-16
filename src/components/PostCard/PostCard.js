@@ -9,11 +9,18 @@ function PostCard({ post, handleDeletePost, user }) {
 
     return (
         <>
+            <div className="post-detail">
+                <div className="post-header">
+                    <p>{post.title}</p>
+                    <p>{post.creator}</p>
+                </div>
+                <div>
+                    <p>{post.description}</p>
+                </div>
+            </div>
 
-            <p>{post.title}</p>
-            <p>{post.creator}</p>
 
-            <p>{post.description}</p>
+
 
         </>
     )

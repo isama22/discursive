@@ -1,0 +1,19 @@
+.post-detail {
+    width: 510px;
+    border: solid 1px#731154;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    box-shadow: grey 2px 2px 60px 1px;
+    white-space: pre-wrap;
+}
+
+/* .post-body-details {
+    text-align: left;
+    margin-left: 10px;
+    white-space: pre-wrap;
+    color: 	#731154;
+} */
