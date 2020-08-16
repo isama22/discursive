@@ -9,19 +9,36 @@ function PostCard({ post, handleDeletePost, user }) {
 
     return (
         <>
-            <div className="post-detail">
+            <div className='card-links'>
+                {user._id === post.user &&
+                    <button
+                        className='delete'
+                        onClick={() => handleDeletePost(post._id)}
+                    >
+                        remove
+                            </button>
+                }
+                {user._id === post.user &&
+                    <Link
+                        className='edit'
+                        to={{
+                            pathname: '/edit',
+                            state: { post },
+                        }}>Edit
+                            </Link>
+                }
+            </div>
+
+
+            <div className="detail-container">
                 <div className="post-header">
                     <p>{post.title}</p>
                     <p>{post.creator}</p>
                 </div>
-                <div>
+                <div className="post-description">
                     <p>{post.description}</p>
                 </div>
             </div>
-
-
-
-
         </>
     )
 }

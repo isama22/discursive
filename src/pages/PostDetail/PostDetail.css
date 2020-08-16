@@ -3,4 +3,5 @@
     flex-direction: column;
     background-color: #e4dfbd;
     width: 530px;
+    overflow-y: scroll;
 }

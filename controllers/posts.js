@@ -4,8 +4,8 @@ module.exports = {
     index,
     show, 
     create,
-    // update,
-    // delete: deleteOne,
+    update,
+    delete: deleteOne,
     // addComment,
     // deleteComment
 }
@@ -28,20 +28,20 @@ async function create(req, res) {
     res.status(201).json(post)
 }
 
-// async function update(req, res) {
-//     try {
-//         const updatedService = await Service.findByIdAndUpdate(req.params.id, req.body, {new: true})
-//         res.status(200).json(updatedService)
-//     }
-//     catch(err){
-//         res.status(500).json(err)
-//     }
-// }
+async function update(req, res) {
+    try {
+        const updatedPost = await Post.findByIdAndUpdate(req.params.id, req.body, {new: true})
+        res.status(200).json(updatedPost)
+    }
+    catch(err){
+        res.status(500).json(err)
+    }
+}
 
-// async function deleteOne(req, res) {
-//     const deletedService = await Service.findByIdAndRemove(req.params.id)
-//     res.status(200).json(deletedService)
-// }
+async function deleteOne(req, res) {
+    const deletedPost = await Post.findByIdAndRemove(req.params.id)
+    res.status(200).json(deletedPost)
+}
 
 // async function addComment (req, res) {
 //     try {

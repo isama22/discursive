@@ -16,7 +16,6 @@
     justify-content: center;
     align-items: center;
     margin: 10px 0px 10px 0px;
-    /* background-color: cyan; */
     width: 230px;
     height: 340px;
     border: solid 1px black;
@@ -30,7 +29,6 @@
     background-color: aquamarine;
     border: solid 1px black;
     width: 230px;
-    /* height: 340px; */
     margin: 0px;
 }
 

@@ -16,7 +16,6 @@ class PostDetail extends Component {
         return (
             <div className="macintosh">
                 <br />
-
                 <div className="Home">
                     <div className="image">
                         <div className="nav">
@@ -27,13 +26,10 @@ class PostDetail extends Component {
                             />
                         </div>
                         <div className="main-container">
-
                             <div className="side-bar">
-
                                 <div className="info">
                                     <Link to="/"><img className="title-photo"
                                         src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
-
                                 </div>
                                 <div className="info-body">
                                     <div className="add-service" >
@@ -46,21 +42,16 @@ class PostDetail extends Component {
                                     </Link>
                                 </div>
                             </div>
-
                             <div className="post-card-container">
-                                {/* <div className='post-detail'> */}
+                                <Link to="/">back</Link>
                                     <PostCard
                                         className="service-card"
                                         key={this.state.post._id}
                                         post={this.state.post}
                                         user={this.props.user}
                                     />
-                                {/* </div> */}
                                 <div className='break-container'>
                                     <div className="break"></div>
-                                </div>
-                                <div className='title-container'>
-                                    <p className="comment-title">Comments ::</p>
                                 </div>
                                 <Comments />
                             </div>
@@ -68,7 +59,6 @@ class PostDetail extends Component {
                     </div>
                 </div>
             </div>
-
         )
     }
 }

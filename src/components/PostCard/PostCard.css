@@ -1,19 +1,18 @@
-.post-detail {
+
+.detail-container {
     width: 510px;
-    border: solid 1px#731154;
     margin-top: 20px;
     margin-left: 10px;
     margin-bottom: 50px;
     /* overflow-y: scroll; */
     display: flex;
     flex-direction: column;
-    box-shadow: grey 2px 2px 60px 1px;
+    /* box-shadow: grey 2px 2px 60px 1px; */
     white-space: pre-wrap;
 }
 
-/* .post-body-details {
+.post-description {
+    width: 450px;
     text-align: left;
-    margin-left: 10px;
-    white-space: pre-wrap;
-    color: 	#731154;
-} */
+    margin-left: 20px;
+}

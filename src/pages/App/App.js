@@ -7,6 +7,7 @@ import Contact from '../../pages/Contact/Contact'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
 import AddPostPage from '../../pages/AddPostPage/AddPostPage'
+import EditPage from '../../pages/EditPage/EditPage'
 import userService from '../../utils/userService';
 import * as postsAPI from '../../services/posts-api'
 
@@ -33,6 +34,25 @@ class App extends Component {
     }),
       () => this.props.history.push('/'))
   }
+
+  handleUpdatePost = async updatedPostData => {
+    const updatedPost = await postsAPI.update(updatedPostData)
+    const newPostsArray = this.state.posts.map(e =>
+      e._id === updatedPost._id ? updatedPost : e
+    )
+    this.setState(
+      { posts: newPostsArray },
+      () => this.props.history.push('/')
+    )
+  }
+
+  handleDeletePost = async id => {
+    await postsAPI.deleteOne(id)
+    this.setState(state => ({
+      posts: state.posts.filter(post => post._id !== id)
+    }), () => this.props.history.push('/'))
+  }
+
   handleGetAllPosts = async () => {
     const posts = await postsAPI.getAll()
     this.setState({ posts: posts })
@@ -65,17 +85,6 @@ class App extends Component {
 
               />
             )}>
-
-            {/* <Route
-              exact path="/"
-              render={(props) => (
-                <Home
-                  {...props}
-                  posts={this.state.posts}
-                />
-              )}> */}
-
-
           </Route>
           <Route
             exact path="/login"
@@ -90,7 +99,6 @@ class App extends Component {
             <Signuppage
               history={history}
               handleSignupOrLogin={this.handleSignupOrLogin}
-
             />
           } />
           <Route
@@ -101,27 +109,37 @@ class App extends Component {
                   handleAddPost={this.handleAddPost}
                 />
                 :
+                <Redirect to='/login' />}
+          />
+          <Route
+            exact path="/edit"
+            render={({ location }) =>
+              userService.getUser() ?
+                <EditPage
+                  handleUpdatePost={this.handleUpdatePost}
+                  location={location}
+                  user={this.state.user}
+                />
+                :
                 <Redirect to='/login' />
-
             }
           />
           <Route
-            exact path="/contact"
-            render={() => (
-              <Contact
-              />
-            )}/>
-          <Route
-            exact path="/postdetail"
+            exact path="/detailpage"
             render={({ location }) => (
               <PostDetail
               location={location}
-                user={this.state.user}
-                posts={this.state.posts}
-                handleAddPost={this.handleAddPost}
+              user={this.state.user}
+              posts={this.state.posts}
+              handleAddPost={this.handleAddPost}
               />
-            )}></Route>
-
+              )} />
+              <Route
+                exact path="/contact"
+                render={() => (
+                  <Contact
+                  />
+                )} />
         </Switch>
       </div>
     );

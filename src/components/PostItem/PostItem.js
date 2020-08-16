@@ -8,19 +8,16 @@ function PostItem({ post }) {
             <Link
             className="detail-link"
                 to={{
-                    pathname: '/postdetail',
+                    pathname: '/detailpage',
                     state: { post }
-                }}
-            >
+                }}>
                 <div className="post">
                     <div className="post-header">
                         <p>{post.title}</p>
                         <p>{post.creator}</p>
-
                     </div>
                     <p className="post-body">{post.description}</p>
                 </div>
-
             </Link>
         </>
     )
