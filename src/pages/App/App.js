@@ -131,7 +131,8 @@ class App extends Component {
               location={location}
               user={this.state.user}
               posts={this.state.posts}
-              handleAddPost={this.handleAddPost}
+              // handleAddPost={this.handleAddPost}
+              handleDeletePost={this.handleDeletePost}
               />
               )} />
               <Route

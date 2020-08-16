@@ -49,6 +49,8 @@ class PostDetail extends Component {
                                         key={this.state.post._id}
                                         post={this.state.post}
                                         user={this.props.user}
+                                         handleDeletePost={this.props.handleDeletePost}
+                                      
                                     />
                                 <div className='break-container'>
                                     <div className="break"></div>

@@ -9,7 +9,7 @@ router.use(require('../../config/auth'))
 
 router.post('/', checkAuth, postsCtrl.create)
 router.put('/:id', checkAuth, postsCtrl.update)
-// router.delete('/:id', checkAuth, postsCtrl.delete)
+router.delete('/:id', checkAuth, postsCtrl.delete)
 // router.post('/:id/comment', checkAuth, postsCtrl.addComment)
 // router.delete('/delete/:id', checkAuth, postsCtrl.deleteComment)
 
