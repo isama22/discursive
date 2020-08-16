@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar'
-import PostItem from '../../components/PostItem/PostItem'
+import PostItems from '../../components/PostItems/PostItems'
 import * as postsAPI from '../../services/posts-api'
 
 class Home extends Component {
@@ -50,21 +50,21 @@ class Home extends Component {
                                         </div> */}
 
 
-                                        <Link to="/">
+                                        <Link to="/contact">
                                             <img className="second-photo"
-                                                src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt="">
+                                                src="https://media0.giphy.com/media/g1wdxEZmNhsY/giphy.gif?cid=ecf05e47h2cu2t7y66jsc7xyq7x4z20q39ndi2mexlm7hkn4&rid=giphy.gif" alt="">
                                             </img>
                                         </Link>
-                                        <div className="add-service">
+                                        {/* <div className="add-service">
                                             <Link className="add-service" to="/contact">contact</Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 
                                 <div className="post-container">
 
 
-                                    <PostItem
+                                    <PostItems
                                         posts={this.state.posts}
                                     />
 

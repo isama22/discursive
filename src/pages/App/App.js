@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
+import PostDetail from '../../pages/PostDetail/PostDetail'
 import Contact from '../../pages/Contact/Contact'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
@@ -109,7 +110,18 @@ class App extends Component {
             render={() => (
               <Contact
               />
+            )}/>
+          <Route
+            exact path="/postdetail"
+            render={({ location }) => (
+              <PostDetail
+              location={location}
+                user={this.state.user}
+                posts={this.state.posts}
+                handleAddPost={this.handleAddPost}
+              />
             )}></Route>
+
         </Switch>
       </div>
     );
