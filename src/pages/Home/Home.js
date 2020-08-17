@@ -9,6 +9,15 @@ class Home extends Component {
     state = {
         posts: []
     }
+
+    // handlePostComponent() {
+    //     // if (this.state.filteredServices.length === 0) {
+    //     //   return this.props.services
+    //     // } else {
+    //       return this.state.posts
+    //     // }
+    //   }
+
     async componentDidMount() {
         const posts = await postsAPI.getAll()
         this.setState({ posts })

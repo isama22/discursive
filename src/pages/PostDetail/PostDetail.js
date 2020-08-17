@@ -44,18 +44,26 @@ class PostDetail extends Component {
                             </div>
                             <div className="post-card-container">
                                 <Link to="/">back</Link>
-                                    <PostCard
-                                        className="service-card"
-                                        key={this.state.post._id}
-                                        post={this.state.post}
-                                        user={this.props.user}
-                                         handleDeletePost={this.props.handleDeletePost}
-                                      
-                                    />
+                                <PostCard
+                                    className="service-card"
+                                    key={this.state.post._id}
+                                    post={this.state.post}
+                                    user={this.props.user}
+                                    handleDeletePost={this.props.handleDeletePost}
+                                />
                                 <div className='break-container'>
                                     <div className="break"></div>
                                 </div>
-                                <Comments />
+                                <Comments
+                                    key={this.state.post._id}
+                                    post={this.state.post}
+                                    user={this.props.user}
+                                    handleChange={this.props.handleChange}
+                                    postComment={this.props.postComment}
+                                    handleAddPostComment={this.props.handleAddPostComment}
+                                    handleDeletePostComment={this.props.handleDeletePostComment}
+                                    handleGetAllPosts={this.props.handleGetAllPosts}
+                                />
                             </div>
                         </div>
                     </div>

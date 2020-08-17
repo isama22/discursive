@@ -16,7 +16,8 @@ class App extends Component {
 
   state = {
     user: userService.getUser(),
-    posts: []
+    posts: [],
+    postComment: ''
   }
 
   handleSignupOrLogin = () => {
@@ -52,6 +53,19 @@ class App extends Component {
       posts: state.posts.filter(post => post._id !== id)
     }), () => this.props.history.push('/'))
   }
+
+
+  // handleAddPostComment = async (e) => {
+  //   e.preventDefault()
+  //   await postsAPI.addComment(e.target.id, this.state.postComment)
+  //   await this.handleGetAllPosts()
+  //   this.setState({ postComment: '' })
+  // }
+
+  // handleDeletePostComment = async (e) => {
+  //   await postsAPI.deleteComment(e.target.id, e.target.name)
+  //   this.handleGetAllPosts()
+  // }
 
   handleGetAllPosts = async () => {
     const posts = await postsAPI.getAll()
@@ -131,8 +145,13 @@ class App extends Component {
               location={location}
               user={this.state.user}
               posts={this.state.posts}
-              // handleAddPost={this.handleAddPost}
               handleDeletePost={this.handleDeletePost}
+              postComment={this.state.postComment}
+              handleGetAllPosts={this.handleGetAllPosts}
+              handleChange={this.handleChange}
+              // handleAddPostComments={this.handleAddPostComment}
+              // handleDeletePostComment={this.handleDeletePostComment}
+
               />
               )} />
               <Route

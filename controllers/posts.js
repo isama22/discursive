@@ -6,8 +6,8 @@ module.exports = {
     create,
     update,
     delete: deleteOne,
-    // addComment,
-    // deleteComment
+    addComment,
+    deleteComment
 }
 
 async function index(req, res) {
@@ -43,26 +43,26 @@ async function deleteOne(req, res) {
     res.status(200).json(deletedPost)
 }
 
-// async function addComment (req, res) {
-//     try {
-//         await Service.findById(req.params.id, function (err, service){
-//             service.serviceComments.push({text: req.body.serviceComment, user: req.user._id, creator: req.user.name})
-//             service.save()
-//             index(req,res)
-//         }) 
-//     } catch (err){
-//             res.json({err})
-//     }
-// }
+async function addComment (req, res) {
+    try {
+        await Post.findById(req.params.id, function (err, post){
+            post.postComments.push({text: req.body.postComment, user: req.user._id, creator: req.user.name})
+            post.save()
+            index(req,res)
+        }) 
+    } catch (err){
+            res.json({err})
+    }
+}
 
-// async function deleteComment(req,res){
-//     try {
-//       await Service.findByIdAndUpdate(req.body.service_id, {
-//             $pull: {
-//               serviceComments: {_id: req.params.id}
-//             }})
-//         index(req, res)
-//     } catch (err) {
-//         res.json({err})
-//     }
-// }
+async function deleteComment(req,res){
+    try {
+      await Post.findByIdAndUpdate(req.body.post_id, {
+            $pull: {
+              postComments: {_id: req.params.id}
+            }})
+        index(req, res)
+    } catch (err) {
+        res.json({err})
+    }
+}
