@@ -33,9 +33,6 @@ class PostComment extends Component {
                     </p>
                     }
                 </div>
-                <div className='comment-text norm-erase'>
-                    <p>{this.props.postComment.text}</p>
-                </div>
             </div>
         )
     }
