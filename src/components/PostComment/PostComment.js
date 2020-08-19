@@ -18,7 +18,7 @@ class PostComment extends Component {
                     <div className='comment-text'>
                         <p>{this.props.postComment.text}</p>
                     </div>
-                    {/* {this.props.user._id === this.props.post.user || this.props.user._id === this.props.postComment.user ? */}
+                    {this.props.user._id === this.props.post.user || this.props.user._id === this.props.postComment.user ?
                         <>
                             {/* <p className='my-comment-date'>{moment(dateCreated.toLocaleString()).format('LL')}</p> */}
                             <div className="comment-x-btn-div">
@@ -32,11 +32,9 @@ class PostComment extends Component {
                             </button>
                             </div>
                         </>
-                        {/* :
-                        <p className='comment-date'>
-                            {moment(dateCreated.toLocaleString()).format('LL')}
-                        </p>
-                    } */}
+                         :
+                        <p></p>
+                    } 
                 </div>
             </div>
         )
