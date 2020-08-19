@@ -29,6 +29,7 @@
     border-bottom: 1px #731154 solid;
     padding-left: 10px;
     color: #731154;
+    padding-right: 10px;
 }
 .details-onClick {
     cursor: pointer;

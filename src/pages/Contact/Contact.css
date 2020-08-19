@@ -18,3 +18,16 @@
     display: flex;
     justify-content: flex-start;
 }
+
+.contact-add-service {
+    margin-top: 60px;
+    -webkit-text-stroke: 1px #731154;
+    opacity: 60%;
+}
+.contact-title-photo {
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 120px;
+    height: 140px;
+}
+

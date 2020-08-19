@@ -32,9 +32,9 @@ function PostCard({ post, handleDeletePost, user }) {
 
 
             <div className="detail-container">
-                <div className="post-header">
-                    <p>{post.title}</p>
-                    <p>{post.creator}</p>
+                <div className="card-post-header">
+                    <p className="card-post-creator">{post.creator}</p>
+                    <p className="card-post-title">{post.title}</p>
                 </div>
                 <div className="post-description">
                     <p>{post.description}</p>

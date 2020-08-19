@@ -33,12 +33,12 @@ class Contact extends Component {
                                         </Link>
                                     </div>
                                     <div className="info-body">
-                                        <div className="add-service">
+                                        <div className="contact-add-service">
                                             <Link className="add-service" to="/addpost">post something</Link>
                                         </div>
                                         <Link to="/">
                                             <img
-                                                className="title-photo"
+                                                className="contact-title-photo"
                                                 src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png"
                                                 alt="">
                                             </img>
