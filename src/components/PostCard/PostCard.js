@@ -10,6 +10,7 @@ function PostCard({ post, handleDeletePost, user }) {
     return (
         <>
             <div className='card-links'>
+                <Link to="/" className="action-link">back</Link>
                 {user._id === post.user &&
                     <button
                         className='delete'
@@ -20,11 +21,11 @@ function PostCard({ post, handleDeletePost, user }) {
                 }
                 {user._id === post.user &&
                     <Link
-                        className='edit'
+                        className='action-link'
                         to={{
                             pathname: '/edit',
                             state: { post },
-                        }}>Edit
+                        }}>edit
                             </Link>
                 }
             </div>

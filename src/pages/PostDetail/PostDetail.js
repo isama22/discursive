@@ -43,7 +43,7 @@ class PostDetail extends Component {
                                 </div>
                             </div>
                             <div className="post-card-container">
-                                <Link to="/">back</Link>
+                                {/* <Link to="/">back</Link> */}
                                 <PostCard
                                     className="service-card"
                                     key={this.state.post._id}

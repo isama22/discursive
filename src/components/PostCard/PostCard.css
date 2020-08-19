@@ -16,3 +16,32 @@
     text-align: left;
     margin-left: 20px;
 }
+
+.card-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.action-link {
+    text-decoration: none;
+    color: #731154;
+    font-size: 11px;
+
+}
+.action-link:hover {
+    font-weight: bold;
+}
+
+.delete {
+    background-color: #e4dfbd;
+    border-radius: 5px;
+    border: none;
+    font-family: monospace;
+    color: #731154;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.delete:hover {
+    font-weight: bold;
+}
