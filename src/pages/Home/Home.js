@@ -61,7 +61,7 @@ class Home extends Component {
 
                                         <Link to="/contact">
                                             <img className="second-photo"
-                                                src="https://media0.giphy.com/media/g1wdxEZmNhsY/giphy.gif?cid=ecf05e47h2cu2t7y66jsc7xyq7x4z20q39ndi2mexlm7hkn4&rid=giphy.gif" alt="">
+                                                src="https://64.media.tumblr.com/ceeb7f2600bb9881b2bf4ad7f7bf95cd/tumblr_p4w3prWhoe1viuar9o1_1280.gifv" alt="">
                                             </img>
                                         </Link>
                                         {/* <div className="add-service">
