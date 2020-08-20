@@ -1,11 +1,12 @@
 .form-container {
-    margin: 25px;
+    /* margin: 25px; */
     padding: 12px;
     display: flex;
     justify-content: flex-start;
     width: 250px;
     /* border: none;
     border-radius: 30px; */
+    /* background-color: black; */
 }
 
 .comment-form {
