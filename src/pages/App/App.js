@@ -140,26 +140,27 @@ class App extends Component {
           />
           <Route
             exact path="/detailpage"
-            render={({ location }) => (
-              <PostDetail
-              location={location}
-              user={this.state.user}
-              posts={this.state.posts}
-              handleDeletePost={this.handleDeletePost}
-              postComment={this.state.postComment}
-              handleGetAllPosts={this.handleGetAllPosts}
-              handleChange={this.handleChange}
-              // handleAddPostComments={this.handleAddPostComment}
-              // handleDeletePostComment={this.handleDeletePostComment}
-
+            render={({ location }) =>
+              userService.getUser() ?
+                <PostDetail
+                  location={location}
+                  user={this.state.user}
+                  posts={this.state.posts}
+                  handleDeletePost={this.handleDeletePost}
+                  postComment={this.state.postComment}
+                  handleGetAllPosts={this.handleGetAllPosts}
+                  handleChange={this.handleChange}
+                />
+                :
+                <Redirect to='/login' />
+            }
+          />
+          <Route
+            exact path="/contact"
+            render={() => (
+              <Contact
               />
-              )} />
-              <Route
-                exact path="/contact"
-                render={() => (
-                  <Contact
-                  />
-                )} />
+            )} />
         </Switch>
       </div>
     );
