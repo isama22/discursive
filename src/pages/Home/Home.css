@@ -110,7 +110,7 @@
     padding: 5px;
     /* -webkit-text-stroke: 1px #ffe5ee; */
     -webkit-text-stroke: 1px #731154;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
 
 .add-service:hover {
