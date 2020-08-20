@@ -3,16 +3,19 @@
     padding: 12px;
     display: flex;
     justify-content: flex-start;
-
     width: 250px;
     /* border: none;
     border-radius: 30px; */
-    
 }
-.comment-form {    
-    /* background-color: black;
-box-shadow: 0px 0px 100px 20px #d4cfbd; */
+
+.comment-form {
+    /* background-color: black; */
+    /* box-shadow: 0px 0px 100px 20px #d4cfbd; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
+
 .comment-input {
     background-color: #e4dfbd;
     border: 1px solid #9d7979;
@@ -22,7 +25,8 @@ box-shadow: 0px 0px 100px 20px #d4cfbd; */
 }
 
 .add-btn {
-    background-color: #e4dfbd;
+    background-color: transparent;
+    outline: none;
     border: none;
     font-size: 20px;
     cursor: pointer;

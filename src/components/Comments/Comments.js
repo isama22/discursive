@@ -52,7 +52,7 @@ render(){
                             id={this.props.post._id} 
                             onSubmit={this.handleAddPostComment}
                         >
-                            <input 
+                            <textarea
                                 onChange={this.handleChange}
                                 name='postComment'
                                 value={this.state.postComment}

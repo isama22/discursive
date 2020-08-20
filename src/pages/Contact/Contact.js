@@ -39,7 +39,7 @@ class Contact extends Component {
                                         <Link to="/">
                                             <img
                                                 className="contact-title-photo"
-                                                src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png"
+                                                src="https://64.media.tumblr.com/5f3dec63c29348f5c3c34bfccde46d06/tumblr_oo51nrkntX1vnm7bio1_1280.jpg"
                                                 alt="">
                                             </img>
                                         </Link>
