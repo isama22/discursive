@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../utils/userService'
 import './PostCard.css'
-// import moment from 'moment'
+import moment from 'moment'
 
 function PostCard({ post, handleDeletePost, user }) {
     user = user === null ? user = NaN : user
-
+    const dateCreated = new Date(post.createdAt)
     return (
         <>
             <div className='card-links'>
@@ -33,12 +33,15 @@ function PostCard({ post, handleDeletePost, user }) {
 
             <div className="detail-container">
                 <div className="card-post-header">
-                    <div className="detail-creator">
+                    <div className="author">
                         <p className="card-post-creator">{post.creator}</p>
                     </div>
                     <div className="detail-title">
                         <p className="card-post-title">{post.title}</p>
                     </div>
+                    <div className="time">
+                            <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
+                        </div>
 
                 </div>
                 <div className="post-description">

@@ -26,8 +26,6 @@ class AddPostPage extends Component {
     })
   }
 
-
-
   render() {
     return (
       <div className="add-post-page">

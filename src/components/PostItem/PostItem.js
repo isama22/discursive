@@ -15,9 +15,15 @@ function PostItem({ post }) {
                 }}>
                 <div className="post">
                     <div className="post-header">
-                        <p>{post.creator}:</p>
+                        <div className="author">
+                            <p>{post.creator}</p>
+                        </div>
+                        
                         <p>{post.title}</p>
-                        <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
+                        <div className="time">
+                            <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
+                        </div>
+                        
                     </div>
                     <p className="post-body">{post.description}</p>
                 </div>

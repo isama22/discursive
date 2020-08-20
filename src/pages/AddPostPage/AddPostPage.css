@@ -34,6 +34,12 @@
     background-color: wheat;
     padding: 5px;
 }
+
+textarea, .service-form {
+    background-color: transparent;
+    outline: none;
+    border: solid 1px black;
+}
 .add-links {
     margin-bottom: 20px;
 }
@@ -43,9 +49,11 @@
 }
 
 .btn {
-    background-color: white;
+    background-color: transparent;
     color: black;
-    border: black;
+    border: 1px solid black;
     font-size: 12px;
     width: 60px;
+    cursor: pointer;
+    outline: none;
 }

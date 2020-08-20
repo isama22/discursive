@@ -25,7 +25,7 @@ class EditPage extends Component {
 
     renderEditForm() {
         return (
-            <div className="add-service-page">
+            <div className="add-post-page">
                 <div className="add-page-header">
                     <p className='page-title'>Edit <span className='mobile-erase'>::</span></p>
                 </div>
