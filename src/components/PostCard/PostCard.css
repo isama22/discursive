@@ -13,12 +13,16 @@
 .card-post-header {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    /* justify-content: center; */
     border-bottom: 1px #731154 solid;
     border-top: 1px #731154 solid;
     padding-left: 10px;
     color: #731154;
     padding-right: 10px;
+}
+.detail-creator {
+    border-right: solid 1px black;
+    padding-right: 20px;
 }
 .card-post-creator {
  font-size: 11px;
@@ -26,7 +30,17 @@
  margin-top: 15px;
 }
 .card-post-title {
-    margin-left: 100px;
+    /* margin-left: 50px; */
+    /* background-color: white; */
+    /* display: flex;
+    justify-content: center; */
+
+}
+.detail-title {
+    /* background-color: red; */
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
 }
 .post-description {
     width: 450px;

@@ -32,7 +32,6 @@ class AddPostPage extends Component {
     return (
       <div className="add-post-page">
         <div className="add-page-header">
-          <p className='page-title'>Add a post</p>
         </div>
         <div className='add-service-form'>
           <form
@@ -41,7 +40,7 @@ class AddPostPage extends Component {
             onSubmit={this.handleSubmit}
           >
             <div className='form-item'>
-              <label className='form-label'>Title :: </label>
+              <label className='form-label'>Title - </label>
               <input
                 className="service-form"
                 name="title"
@@ -51,7 +50,7 @@ class AddPostPage extends Component {
               /> 
             </div>
             <div className='form-item'>
-              <label className='form-label'>Description of Post :: </label>
+              <label className='form-label'>Description - </label>
               <textarea 
                 className="description"
                 name="description"

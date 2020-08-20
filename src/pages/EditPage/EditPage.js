@@ -36,7 +36,7 @@ class EditPage extends Component {
                         onSubmit={this.handleSubmit}
                     >
                         <div className='form-item'>
-                            <label className='form-label'>Service Title :: </label>
+                            <label className='form-label'>Title - </label>
                             <input
                                 className="service-form"
                                 name="title"
@@ -46,7 +46,7 @@ class EditPage extends Component {
                             /> 
                         </div>
                         <div className='form-item'>
-                            <label className='form-label'>Description of Service :: </label>
+                            <label className='form-label'>Description - </label>
                             <textarea 
                                 className="service-form description"
                                 name="description"
@@ -61,9 +61,8 @@ class EditPage extends Component {
                             <button
                                 className="btn"
                                 type="submit"
-                                disabled={this.state.invalidForm}
-                            >
-                                Update Service
+                                disabled={this.state.invalidForm}>
+                                Update
                             </button>
                         </div>
                     </form>
