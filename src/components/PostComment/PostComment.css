@@ -1,26 +1,32 @@
 .comment-group {
-display: flex;
-flex-direction: row;
-/* background-color: rgba(75, 236, 241, 0.25); */
-width: 400px;
-border: solid 1px #9d7979;
-border-radius: 10px;
-margin: 12px;
-justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(75, 236, 241, 0.25); */
+    width: 400px;
+    border: solid 1px #9d7979;
+    border-radius: 10px;
+    margin: 12px;
+    justify-content: space-between;
 }
 
-.comment-creator-div{
-/* background-color: grey; */
-text-align: left;
-margin-left: 10px;
-border-right: solid rgba(17, 21, 228, 0.5) 1px;
-padding-right: 15px;
+.comment-creator-div {
+    /* background-color: grey; */
+    text-align: left;
+    margin-left: 10px;
+    border-right: solid rgba(17, 21, 228, 0.5) 1px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .comment-creator {
-/* background-color: red; */
-font-size: 11px;
-color: rgba(17, 140, 228, 1);
+    /* background-color: red; */
+    font-size: 11px;
+    color: rgba(17, 140, 228, 1);
+    margin: 0px;
 }
 
 .comment-text {
@@ -34,7 +40,7 @@ color: rgba(17, 140, 228, 1);
 .my-comment-date {
     color: rgba(17, 140, 228, 1);
     font-size: 11px;
-
+    margin: 0px;
 }
 
 .comment-x-btn-div {
@@ -42,16 +48,19 @@ color: rgba(17, 140, 228, 1);
     justify-content: center;
     align-items: center;
 }
+
 .comment-x-btn {
     background-color: transparent;
     border: none;
     height: 20px;
     margin: 10px;
 }
+
 .comment-x-btn:hover {
     font-weight: bold;
     cursor: pointer;
 }
+
 /* .comment-date {
     color: rgba(17, 140, 228, 1);
     font-size: 11px;

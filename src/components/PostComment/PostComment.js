@@ -16,7 +16,6 @@ class PostComment extends Component {
                     </div>
                     <div className='comment-text'>
                         <p>{this.props.postComment.text}</p>
-                        {/* <p>{this.props.post.postComments.length}</p> */}
                     </div>
                     {this.props.user._id === this.props.post.user || this.props.user._id === this.props.postComment.user ?
                         <>
