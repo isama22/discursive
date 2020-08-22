@@ -45,6 +45,10 @@ function PostCard({ post, handleDeletePost, user }) {
                         </div>
                 </div>
                 <div className="post-description">
+                    {/* if substring begins with http || www then make it an external link */}
+                    {post.description.startsWith('http') ? 
+                    <a className="description-link" href="{post.description}" target="_blank">{post.description}</a> : 
+                    '' }
                     <p>{post.description}</p>
                 </div>
             </div>
