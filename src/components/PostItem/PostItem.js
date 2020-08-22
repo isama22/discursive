@@ -18,18 +18,19 @@ function PostItem({ post, postComments }) {
                         <div className="author">
                             <p>{post.creator}</p>
                         </div>
-                        
                         <p>{post.title}</p>
-
-                        <p>{post.postComments.length}</p>
-
                         <div className="time">
                             <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
                         </div>
-                        
                     </div>
-                    <p className="post-body">{post.description}</p>
+                    {post.postComments.length > 1 ?
+                             <p className="comment-number">{post.postComments.length} comments</p>
+                    : ''}
+                    <div>
+                        <p className="post-body">{post.description}</p>
+                    </div>
                 </div>
+                
             </Link>
         </>
     )

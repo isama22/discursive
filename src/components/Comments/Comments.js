@@ -67,7 +67,6 @@ render(){
                             >
                                 →
                             </button>
-                            <p>{this.state.post.postComments.length}</p>
                         </form>
                     </div>
                 </div>
