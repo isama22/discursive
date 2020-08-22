@@ -40,7 +40,7 @@ class PostDetail extends Component {
                                     </div>
                                     <Link to="/contact">
                                         <img className="second-photo"
-                                            src="https://media0.giphy.com/media/g1wdxEZmNhsY/giphy.gif?cid=ecf05e47h2cu2t7y66jsc7xyq7x4z20q39ndi2mexlm7hkn4&rid=giphy.gif" alt="">
+                                            src="https://i.stack.imgur.com/rpKqs.gif" alt="">
                                         </img>
                                     </Link>
                                 </div>

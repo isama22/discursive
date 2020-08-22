@@ -63,7 +63,7 @@ class Home extends Component {
 
                                         <Link to="/contact">
                                             <img className="second-photo"
-                                                src="https://64.media.tumblr.com/ceeb7f2600bb9881b2bf4ad7f7bf95cd/tumblr_p4w3prWhoe1viuar9o1_1280.gifv" alt="">
+                                                src="https://i.stack.imgur.com/TsA97.gif" alt="">
                                             </img>
                                         </Link>
                                         {/* <div className="add-service">

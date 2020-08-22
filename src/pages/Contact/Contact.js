@@ -34,12 +34,12 @@ class Contact extends Component {
                                     </div>
                                     <div className="info-body">
                                         <div className="contact-add-service">
-                                            <Link className="add-service" to="/addpost">post something</Link>
+                                            <p>use this site to compile and share your source materials!</p>
                                         </div>
                                         <Link to="/">
                                             <img
                                                 className="contact-title-photo"
-                                                src="https://64.media.tumblr.com/5f3dec63c29348f5c3c34bfccde46d06/tumblr_oo51nrkntX1vnm7bio1_1280.jpg"
+                                                src="https://thumbs.gfycat.com/KaleidoscopicAdeptCoyote-max-1mb.gif"
                                                 alt="">
                                             </img>
                                         </Link>
