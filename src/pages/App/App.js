@@ -91,11 +91,15 @@ class App extends Component {
             exact path="/"
             render={({ history }) => (
               <Home
+                history={history}
                 user={this.state.user}
                 posts={this.state.posts}
                 handleAddPost={this.handleAddPost}
                 handleSignupOrLogin={this.handleSignupOrLogin}
                 handleLogout={this.handleLogout}
+
+                postComment={this.state.postComment}
+                handleGetAllPosts={this.handleGetAllPosts}
 
               />
             )}>

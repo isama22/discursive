@@ -3,6 +3,7 @@ import './Comments.css'
 import PostComment from '../../components/PostComment/PostComment'
 import * as postsAPI from '../../services/posts-api'
 
+
 class Comments extends Component {
     state = {
         postComment: '',
@@ -31,6 +32,7 @@ class Comments extends Component {
         const post = await postsAPI.getOne(this.state.post)
         this.setState({post: post, postComment: ''})
     }
+
 
 render(){
     return (
@@ -65,6 +67,7 @@ render(){
                             >
                                 →
                             </button>
+                            <p>{this.state.post.postComments.length}</p>
                         </form>
                     </div>
                 </div>

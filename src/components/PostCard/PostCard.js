@@ -38,11 +38,11 @@ function PostCard({ post, handleDeletePost, user }) {
                     </div>
                     <div className="detail-title">
                         <p className="card-post-title">{post.title}</p>
+                       
                     </div>
                     <div className="time">
                             <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
                         </div>
-
                 </div>
                 <div className="post-description">
                     <p>{post.description}</p>

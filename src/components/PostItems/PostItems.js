@@ -12,6 +12,10 @@ class PostItems extends Component {
                     <PostItem 
                       post={post} 
                       key={post._id}
+
+
+                      postComments={post.postComments}
+                      handleGetAllPosts={this.props.handleGetAllPosts}
                     />
                   )}
               </div> 

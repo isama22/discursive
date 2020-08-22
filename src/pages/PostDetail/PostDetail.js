@@ -28,8 +28,11 @@ class PostDetail extends Component {
                         <div className="main-container">
                             <div className="side-bar">
                                 <div className="info">
-                                    <Link to="/"><img className="title-photo"
-                                        src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
+                                    <Link to="/">
+                                        <img className="title-photo"
+                                            src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt="">
+                                        </img>
+                                    </Link>
                                 </div>
                                 <div className="info-body">
                                     <div className="add-service" >
@@ -43,7 +46,6 @@ class PostDetail extends Component {
                                 </div>
                             </div>
                             <div className="post-card-container">
-                                {/* <Link to="/">back</Link> */}
                                 <PostCard
                                     className="service-card"
                                     key={this.state.post._id}
@@ -51,9 +53,6 @@ class PostDetail extends Component {
                                     user={this.props.user}
                                     handleDeletePost={this.props.handleDeletePost}
                                 />
-                                <div className='break-container'>
-                                    <div className="break"></div>
-                                </div>
                                 <Comments
                                     key={this.state.post._id}
                                     post={this.state.post}

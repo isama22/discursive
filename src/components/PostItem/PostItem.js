@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './PostItem.css'
 import moment from 'moment'
 
-function PostItem({ post }) {
+function PostItem({ post, postComments }) {
     const dateCreated = new Date(post.createdAt)
     return (
         <>
@@ -20,6 +20,9 @@ function PostItem({ post }) {
                         </div>
                         
                         <p>{post.title}</p>
+
+                        <p>{post.postComments.length}</p>
+
                         <div className="time">
                             <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
                         </div>

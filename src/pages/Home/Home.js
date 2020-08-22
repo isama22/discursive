@@ -7,8 +7,10 @@ import * as postsAPI from '../../services/posts-api'
 
 class Home extends Component {
     state = {
-        posts: []
+        posts: [],
+        postComments: ''
     }
+
 
     // handlePostComponent() {
     //     // if (this.state.filteredServices.length === 0) {
@@ -75,6 +77,10 @@ class Home extends Component {
 
                                     <PostItems
                                         posts={this.state.posts}
+
+
+                                        postComments={this.state.postComments}
+                                        handleGetAllPosts={this.props.handleGetAllPosts}
                                     />
 
                                 </div>
