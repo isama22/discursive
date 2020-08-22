@@ -55,20 +55,11 @@ class Home extends Component {
                                         <div className="add-service" >
                                             <Link className="add-service" to="/addpost">post something</Link>
                                         </div>
-
-                                        {/* <div className="add-service" >
-                                            <Link className="add-service" to="/addpost">search by tag</Link>
-                                        </div> */}
-
-
                                         <Link to="/contact">
                                             <img className="second-photo"
                                                 src="https://i.stack.imgur.com/TsA97.gif" alt="">
                                             </img>
                                         </Link>
-                                        {/* <div className="add-service">
-                                            <Link className="add-service" to="/contact">contact</Link>
-                                        </div> */}
                                     </div>
                                 </div>
 

@@ -54,11 +54,13 @@
     border: none;
     height: 20px;
     margin: 10px;
+    outline: none;
 }
 
 .comment-x-btn:hover {
     font-weight: bold;
     cursor: pointer;
+    color: red;
 }
 
 /* .comment-date {

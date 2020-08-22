@@ -20,12 +20,14 @@
 }
 
 .contact-add-service {
-    margin-top: 60px;
-    -webkit-text-stroke: 1px #731154;
-    opacity: 60%;
+    margin: 0px 0px 0px 30px;
+    color: black;
+    text-align: left;
+    width: 100px;
 }
+
 .contact-title-photo {
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 0px;
     width: 120px;
     height: 80px;

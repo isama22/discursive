@@ -35,6 +35,7 @@ class Contact extends Component {
                                     <div className="info-body">
                                         <div className="contact-add-service">
                                             <p>use this site to compile and share your source materials!</p>
+                                            <p>you can find me and my other work through the links to the right</p>
                                         </div>
                                         <Link to="/">
                                             <img
