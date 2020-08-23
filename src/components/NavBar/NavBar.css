@@ -17,23 +17,26 @@
 .nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: left;
-  /* width: 400px; */
-  width: 90%;
+  width: 47vw;
   padding-bottom: 5px;
 }
 
 .NavBar {
   /* width: 300px; */
-  width: 50%;
+  /* width: 50%; */
+  /* width: 49vw; */
 }
 
 @media screen and (max-width: 900px) {
   .nav-container {
-    flex-direction: column;
+    flex-direction: row;
+    width: 49vw;
   }
   .Nav-Bar {
     width: 100%;
+    margin: 0vw;
+
   }
 }

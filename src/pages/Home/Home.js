@@ -32,15 +32,17 @@ class Home extends Component {
                 {/* <div className="macintosh">
                     <br /> */}
 
-                <div className="mini-nav">
+                <div className="Home">
+                    <div className="image">
+
+                        <div className="mini-nav">
                             <NavBar
                                 user={this.props.user}
                                 handleLogout={this.props.handleLogout}
                                 handleSignupOrLogin={this.props.handleSignupOrLogin}
                             />
                         </div>
-                <div className="Home">
-                    <div className="image">
+
                         <div className="nav">
                             <NavBar
                                 user={this.props.user}
@@ -49,33 +51,12 @@ class Home extends Component {
                             />
                         </div>
 
-
                         <div className="main-container">
-                        <div className="mini-side-bar">
-                            <div className="mini-info">
-                                <Link to="/"><img className="mini-title-photo"
-                                    src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
-                            
-                            <div className="mini-info-body">
-                                <div className="mini-add-service" >
-                                    <Link className="mini-add-service" to="/addpost">post something</Link>
-                                </div>
-                                <Link to="/contact">
-                                    <img className="mini-second-photo"
-                                        src="https://i.stack.imgur.com/TsA97.gif" alt="">
-                                    </img>
-                                </Link>
-                            </div>
-                            </div>
-                        </div>
 
                             <div className="side-bar">
-
                                 <div className="info">
-                                    {/* <Link to="/"><img className="title-photo" src="https://i.postimg.cc/3wG4KKLY/Screen-Shot-2020-08-11-at-2-20-47-AM.png" alt=""></img></Link> */}
                                     <Link to="/"><img className="title-photo"
                                         src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
-
                                 </div>
                                 <div className="info-body">
                                     <div className="add-service" >
@@ -89,19 +70,16 @@ class Home extends Component {
                                 </div>
                             </div>
 
-
-
                             <div className="post-container">
-
-
+                                <div className="mini-side-bar">
+                                    <Link className="mini-add-service" to="/addpost">post something</Link>
+                                    <Link className="contact" to="/contact">contact</Link>
+                                </div>
                                 <PostItems
                                     posts={this.state.posts}
-
-
                                     postComments={this.state.postComments}
                                     handleGetAllPosts={this.props.handleGetAllPosts}
                                 />
-
                             </div>
                         </div>
                     </div>
