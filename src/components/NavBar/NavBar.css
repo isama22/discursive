@@ -1,8 +1,7 @@
 .NavBar-link {
   text-decoration: none;
   color: bisque;
-  -webkit-text-stroke: 1px bisque;
-
+  -webkit-text-stroke: 1px grey;
 }
 
 .NavBar-link:hover {
@@ -11,20 +10,30 @@
 }
 
 .NavBar-welcome {
-  color: bisque;
-  -webkit-text-stroke:  0.5px bisque;
+  color: grey;
+  -webkit-text-stroke: 0.5px grey;
 }
-
 
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: left;
-  width: 400px;
+  /* width: 400px; */
+  width: 90%;
   padding-bottom: 5px;
 }
 
 .NavBar {
-width: 300px;
+  /* width: 300px; */
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .Nav-Bar {
+    width: 100%;
+  }
 }

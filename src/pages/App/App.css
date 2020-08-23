@@ -18,3 +18,7 @@ html, body {
   display: flex;
   justify-content: flex-end;
 } */
+
+input {
+  font-family: monospace;
+}
