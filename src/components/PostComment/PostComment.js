@@ -12,7 +12,7 @@ class PostComment extends Component {
                 <div className='comment-group'>
                     <div className='comment-creator-div'>
                         <p className='comment-creator'>{this.props.postComment.creator}</p>
-                        <p className='my-comment-date'>{moment(dateCreated.toLocaleString()).format('LL')}</p>
+                        <p className='my-comment-date'>{moment(dateCreated.toLocaleString()).format('MM.DD.YYYY')}</p>
                     </div>
                     <div className='comment-text'>
                         <p>{this.props.postComment.text}</p>

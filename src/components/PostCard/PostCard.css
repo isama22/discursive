@@ -101,6 +101,11 @@
         justify-content: center;
         white-space: pre-wrap;
     }
+    .card-links {
+        width: 48.7vw;
+        border-top: solid 1px #731154;
+        padding-top: 1vw;
+    }
     .card-post-header {
         width: 47.5vw;
         display: flex;

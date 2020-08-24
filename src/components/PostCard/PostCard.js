@@ -39,7 +39,7 @@ function PostCard({ post, handleDeletePost, user }) {
                        
                     </div>
                     <div className="time">
-                            <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
+                            <p>{moment(dateCreated.toLocaleString()).format('MM.DD.YYYY')}</p>
                         </div>
                 </div>
                 <div className="post-description">

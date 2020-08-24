@@ -20,7 +20,7 @@ function PostItem({ post, postComments }) {
                         </div>
                         <p>{post.title}</p>
                         <div className="time">
-                            <p>{moment(dateCreated.toLocaleString()).format('LL')}</p>
+                            <p>{moment(dateCreated.toLocaleString()).format('MM.DD.YYYY')}</p>
                         </div>
                     </div>
                     {post.postComments.length > 1 ?
