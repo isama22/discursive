@@ -1,8 +1,11 @@
 .add-post-page {
     background-color: beige;
-    height: 400px;
-    width: 500px;
-    margin: 100px 0px 0px 450px;
+    /* height: 400px;
+    width: 500px; */
+    height: 60vh;
+    width: 30vw;
+    /* margin: 100px 0px 0px 450px; */
+    margin: 10vw 0vw 5vw 33vw;
     display: flex;
     justify-content: center;
     align-items: center;
