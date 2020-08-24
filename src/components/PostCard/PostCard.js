@@ -9,6 +9,7 @@ function PostCard({ post, handleDeletePost, user }) {
     const dateCreated = new Date(post.createdAt)
     return (
         <>
+            <div className="detail-container">
             <div className='card-links'>
                 <Link to="/" className="action-link">back</Link>
                 {user._id === post.user &&
@@ -29,9 +30,6 @@ function PostCard({ post, handleDeletePost, user }) {
                             </Link>
                 }
             </div>
-
-
-            <div className="detail-container">
                 <div className="card-post-header">
                     <div className="author">
                         <p className="card-post-creator">{post.creator}</p>
@@ -45,10 +43,6 @@ function PostCard({ post, handleDeletePost, user }) {
                         </div>
                 </div>
                 <div className="post-description">
-                    {/* if substring begins with http || www then make it an external link */}
-                    {post.description.startsWith('http') ? 
-                    <a className="description-link" href="{post.description}" target="_blank">{post.description}</a> : 
-                    '' }
                     <p>{post.description}</p>
                 </div>
             </div>

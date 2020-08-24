@@ -14,38 +14,46 @@ class PostDetail extends Component {
     render() {
 
         return (
-            <div className="macintosh">
-                <br />
-                <div className="Home">
-                    <div className="image">
-                        <div className="nav">
-                            <NavBar
-                                user={this.props.user}
-                                handleLogout={this.props.handleLogout}
-                                handleSignupOrLogin={this.props.handleSignupOrLogin}
-                            />
+            <div className="Home">
+            <div className="image">
+                <div className="mini-nav">
+                    <NavBar
+                        user={this.props.user}
+                        handleLogout={this.props.handleLogout}
+                        handleSignupOrLogin={this.props.handleSignupOrLogin}
+                    />
+                </div>
+                <div className="nav">
+                    <NavBar
+                        user={this.props.user}
+                        handleLogout={this.props.handleLogout}
+                        handleSignupOrLogin={this.props.handleSignupOrLogin}
+                    />
+                </div>
+                <div className="main-container">
+                    <div className="side-bar">
+                        <div className="info">
+                            <Link to="/"><img className="title-photo"
+                                src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
                         </div>
-                        <div className="main-container">
-                            <div className="side-bar">
-                                <div className="info">
-                                    <Link to="/">
-                                        <img className="title-photo"
-                                            src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt="">
-                                        </img>
-                                    </Link>
-                                </div>
-                                <div className="info-body">
-                                    <div className="add-service" >
-                                        <Link className="add-service" to="/addpost">post something</Link>
-                                    </div>
-                                    <Link to="/contact">
-                                        <img className="second-photo"
-                                            src="https://i.stack.imgur.com/rpKqs.gif" alt="">
-                                        </img>
-                                    </Link>
-                                </div>
+                        <div className="info-body">
+                            <div className="add-service" >
+                                <Link className="add-service" to="/addpost">post something</Link>
                             </div>
-                            <div className="post-card-container">
+                            <Link to="/contact">
+                                <img className="second-photo"
+                                    src="https://i.stack.imgur.com/TsA97.gif" alt="">
+                                </img>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="post-container">
+                        <div className="mini-side-bar">
+                            <Link className="mini-add-service" to="/addpost">post something</Link>
+                            <Link className="contact" to="/contact">contact</Link>
+                        </div>
+                        <div className="post-card-container">
                                 <PostCard
                                     className="service-card"
                                     key={this.state.post._id}
@@ -64,10 +72,10 @@ class PostDetail extends Component {
                                     handleGetAllPosts={this.props.handleGetAllPosts}
                                 />
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         )
     }
 }

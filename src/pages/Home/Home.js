@@ -29,12 +29,8 @@ class Home extends Component {
 
         return (
             <>
-                {/* <div className="macintosh">
-                    <br /> */}
-
                 <div className="Home">
                     <div className="image">
-
                         <div className="mini-nav">
                             <NavBar
                                 user={this.props.user}
@@ -42,7 +38,6 @@ class Home extends Component {
                                 handleSignupOrLogin={this.props.handleSignupOrLogin}
                             />
                         </div>
-
                         <div className="nav">
                             <NavBar
                                 user={this.props.user}
@@ -50,9 +45,7 @@ class Home extends Component {
                                 handleSignupOrLogin={this.props.handleSignupOrLogin}
                             />
                         </div>
-
                         <div className="main-container">
-
                             <div className="side-bar">
                                 <div className="info">
                                     <Link to="/"><img className="title-photo"
@@ -75,6 +68,7 @@ class Home extends Component {
                                     <Link className="mini-add-service" to="/addpost">post something</Link>
                                     <Link className="contact" to="/contact">contact</Link>
                                 </div>
+                                
                                 <PostItems
                                     posts={this.state.posts}
                                     postComments={this.state.postComments}
@@ -84,7 +78,6 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                {/* </div> */}
             </>
         );
     }
