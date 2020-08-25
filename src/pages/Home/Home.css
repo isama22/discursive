@@ -152,4 +152,7 @@
         color: #731154;
         font-weight: bold;
     }
+    .contact:hover, .mini-add-service:hover {
+        -webkit-text-stroke: 1px #731154;
+    }
 }

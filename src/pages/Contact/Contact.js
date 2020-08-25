@@ -32,7 +32,7 @@ class Contact extends Component {
                                     <Link to="/"><img className="title-photo"
                                         src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
                                 </div>
-            
+
                                 <div className="contact-add-service">
                                     <p>use this site to compile and share your source materials!</p>
                                     <p>you can find me and my other work through the links to the right</p>
@@ -46,13 +46,18 @@ class Contact extends Component {
                                 </Link>
                             </div>
 
+
                             <div className="me">
+                            <div className="contact-mini-side-bar">
+                                <Link className="mini-add-service" to="/addpost">post something</Link>
+                                <Link className="contact" to="/">back</Link>
+                            </div>
                                 <div>
                                     <p className="email">isasofma@gmail.com</p>
                                 </div>
                                 <div className='icons'>
                                     <SocialIcon
-                                        style={{ height: 35, width: 35, margin: 10 }}
+                                        style={{ height: 35, width: 35, margin: 10 }}   
                                         bgColor="bisque"
                                         fgColor='black'
                                         url="https://www.linkedin.com/in/isa-sofia-martinez/"

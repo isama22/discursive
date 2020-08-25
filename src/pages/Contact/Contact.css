@@ -33,7 +33,9 @@
     width: 120px;
     height: 80px;
 }
-
+.contact-mini-side-bar {
+    display: none;
+}
 @media screen and (max-width: 900px){
     .me {
         width: 100vw;
@@ -41,5 +43,13 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+    .contact-mini-side-bar {
+        display: block;
+        background-color: #d4cfbd;
+        padding: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
 
+    }
 }

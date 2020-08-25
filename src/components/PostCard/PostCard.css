@@ -30,6 +30,9 @@
 
 .author {
     padding-right: 10px;
+    display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .card-post-creator {
@@ -89,6 +92,13 @@
     cursor: pointer;
 }
 
+.time {
+    border-left: solid 1px black;
+    padding-left: 1vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 @media screen and (max-width: 900px){
     .detail-container {
         width: 48.8vw;
