@@ -113,21 +113,11 @@
 .mini-side-bar {
     display: none;
 }
-.mini-nav {
-    display: none;
-}
+
 @media screen and (max-width: 900px){
     .image {
         display: flex;
         flex-direction: column;
-    }
-    .nav {
-        display: none;
-    }
-    .mini-nav {
-        display: block;
-        z-index: 1;
-        margin-left: 4vw;
     }
     .side-bar {
         display: none;

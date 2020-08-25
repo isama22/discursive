@@ -1,7 +1,8 @@
 .me {
-    width: 530px;
+    width: 37vw;
     background-image: url(https://i.postimg.cc/c4th4k7K/Screen-Shot-2020-08-15-at-8-37-59-PM.png);
-    background-size: 530px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .icons {
@@ -33,3 +34,12 @@
     height: 80px;
 }
 
+@media screen and (max-width: 900px){
+    .me {
+        width: 100vw;
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+}
