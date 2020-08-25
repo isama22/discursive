@@ -26,7 +26,8 @@ class PostComment extends Component {
                                 id={this.props.post._id}
                                 name={this.props.postComment._id}
                                 onClick={this.props.handleDeletePostComment}
-                            > X
+                            > 
+                            X
                             </button>
                             </div>
                         </>

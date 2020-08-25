@@ -55,7 +55,6 @@ class PostDetail extends Component {
                         </div>
                         <div className="post-card-container">
                                 <PostCard
-                                    className="service-card"
                                     key={this.state.post._id}
                                     post={this.state.post}
                                     user={this.props.user}

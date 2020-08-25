@@ -22,3 +22,8 @@ html, body {
 input {
   font-family: monospace;
 }
+
+::selection {
+  color: aqua;
+  background-color: #c157ff;
+}

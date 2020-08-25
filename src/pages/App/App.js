@@ -163,6 +163,7 @@ class App extends Component {
             exact path="/contact"
             render={() => (
               <Contact
+              user={this.state.user}
               />
             )} />
         </Switch>

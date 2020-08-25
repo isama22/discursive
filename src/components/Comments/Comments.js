@@ -65,7 +65,7 @@ render(){
                                 className="add-btn"
                                 type="submit"
                             >
-                                →
+                                ➳
                             </button>
                         </form>
                     </div>
