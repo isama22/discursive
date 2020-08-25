@@ -16,13 +16,6 @@ class PostDetail extends Component {
         return (
             <div className="Home">
             <div className="image">
-                <div className="mini-nav">
-                    <NavBar
-                        user={this.props.user}
-                        handleLogout={this.props.handleLogout}
-                        handleSignupOrLogin={this.props.handleSignupOrLogin}
-                    />
-                </div>
                 <div className="nav">
                     <NavBar
                         user={this.props.user}

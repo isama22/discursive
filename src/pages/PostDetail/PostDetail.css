@@ -3,5 +3,6 @@
     flex-direction: column;
     background-color: transparent;
     width: 330vw;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
+
