@@ -36,6 +36,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: pre-wrap;
+    text-align: left;
 }
 
 .my-comment-date {

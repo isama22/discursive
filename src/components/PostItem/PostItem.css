@@ -1,14 +1,9 @@
 .post {
-    /* width: 510px;
-    height: 150px; */
-
     width: 95%;
-    height: 20%;
+    height: 20vh;
+
     border: solid 1px#731154;
 
-    /* margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 50px; */
     margin: 2% 2% 5% 2%;
 
     overflow-y: scroll;
