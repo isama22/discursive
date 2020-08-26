@@ -136,3 +136,22 @@
         margin: 1vw;
     }
 }
+
+@media screen and (max-width: 375px){
+    .detail-container {
+        width: 300px;
+        margin-top: 1vw;
+        margin-bottom: 3vw;
+    }
+    .card-post-header {
+        width: 290px;
+    }
+    .post-description {
+        width: 290px;
+    }
+    .card-links {
+        margin-bottom: 10px;
+        width: 310px;
+        padding-top: 10px;
+    }
+}

@@ -166,11 +166,11 @@
     .main-container {
         margin: 6px 0px 0px 8px;
         width: 350px;
-        height: 590px;
+        height: 500px;
     }
     .post-container {
         width: 530px;
-        height: 590px;
+        height: 500px;
         overflow-y: scroll;
         overflow-x: hidden;
     }

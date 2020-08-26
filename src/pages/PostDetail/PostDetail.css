@@ -6,3 +6,9 @@
     /* overflow-y: scroll; */
 }
 
+@media screen and (max-width: 375px){
+    .main-container {
+        width: 300px;
+        margin-left: 13px;
+    }
+}
