@@ -156,3 +156,30 @@
         -webkit-text-stroke: 1px #731154;
     }
 }
+
+@media screen and (max-width: 375px){
+    .Home {
+        margin: 0px 0px 0px 0px;
+        width: 370px;
+        /* height: 500px; */
+    }
+    .main-container {
+        margin: 6px 0px 0px 8px;
+        width: 350px;
+        height: 590px;
+    }
+    .post-container {
+        width: 530px;
+        height: 590px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .nav {
+        margin-right: 0vw;
+        margin-top: 19px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: flex-start;
+        z-index: 1;
+    }
+}

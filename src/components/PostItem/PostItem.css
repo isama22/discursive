@@ -1,11 +1,8 @@
 .post {
     width: 95%;
     height: 20vh;
-
     border: solid 1px#731154;
-
     margin: 2% 2% 5% 2%;
-
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
