@@ -60,3 +60,11 @@ textarea, .service-form {
     cursor: pointer;
     outline: none;
 }
+
+@media screen and (max-width: 375px){
+    .add-post-page {
+        height: 62vh;
+        width: 300px;
+        margin: 30vw 0vw 5vw 10vw;
+    }
+}
