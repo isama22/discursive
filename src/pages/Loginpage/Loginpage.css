@@ -69,4 +69,7 @@
         height: 200px;
         margin: 10px;
     }
+    .col-sm-12 {
+        margin-top: 10px;
+    }
 }
