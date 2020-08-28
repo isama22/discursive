@@ -52,6 +52,7 @@ class Home extends Component {
                                     <Link className="mini-add-service" to="/addpost">post something</Link>
                                     <Link className="contact" to="/contact">contact</Link>
                                 </div>
+                           
                                 
                                 <PostItems
                                     posts={this.state.posts}

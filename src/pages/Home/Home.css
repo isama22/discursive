@@ -172,8 +172,12 @@
 
     }
     .mini-side-bar {
-        margin-bottom: 20px;
-        position: sticky;
+        margin-bottom: 10px;
+        /* position: fixed; */
+        /* background-color: #e4dfbd;
+        width: 300px;
+        margin: 0px; */
+        
     }
     .post-container {
         width: 530px;
