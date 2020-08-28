@@ -71,11 +71,10 @@
 
 @media screen and (max-width: 375px) {
     .post-body {
-        /* text-align: left;
-        margin-left: 10px;
-        white-space: pre-wrap;
-        color: #731154; */
-        background-color: tomato;
+        width: 250px;
+    }
+    .post-header {
+        background-color: aliceblue;
         width: 250px;
     }
 }
