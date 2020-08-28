@@ -164,9 +164,12 @@
         /* height: 500px; */
     }
     .main-container {
-        margin: 6px 0px 0px 8px;
+        margin: 20px 0px 0px 20px;
         width: 350px;
         height: 500px;
+    }
+    .mini-side-bar {
+        margin-bottom: 20px;
     }
     .post-container {
         width: 530px;

@@ -11,22 +11,12 @@ class Home extends Component {
         postComments: ''
     }
 
-
-    // handlePostComponent() {
-    //     // if (this.state.filteredServices.length === 0) {
-    //     //   return this.props.services
-    //     // } else {
-    //       return this.state.posts
-    //     // }
-    //   }
-
     async componentDidMount() {
         const posts = await postsAPI.getAll()
         this.setState({ posts })
     }
+    
     render() {
-
-
         return (
             <>
                 <div className="Home">
@@ -42,7 +32,8 @@ class Home extends Component {
                             <div className="side-bar">
                                 <div className="info">
                                     <Link to="/"><img className="title-photo"
-                                        src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt=""></img></Link>
+                                        src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt="">
+                                    </img></Link>
                                 </div>
                                 <div className="info-body">
                                     <div className="add-service" >
