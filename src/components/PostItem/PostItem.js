@@ -18,7 +18,9 @@ function PostItem({ post, postComments }) {
                         <div className="author">
                             <p>{post.creator}</p>
                         </div>
-                        <p className="post-title">{post.title}</p>
+                        <div className="post-title">
+                        <p>{post.title}</p>
+                        </div>
                         <div className="time">
                             <p>{moment(dateCreated.toLocaleString()).format('MM.DD.YYYY')}</p>
                         </div>
