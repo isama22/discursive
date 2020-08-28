@@ -87,8 +87,10 @@
     }
     .post-header {
         width: 275px;
+        height: auto;
     }
     .post-title {
         padding-bottom: 10px;
+        height: auto;
     }
 }
