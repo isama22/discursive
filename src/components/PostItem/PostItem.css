@@ -75,7 +75,7 @@
         /* height: 20vh; */
         border: solid 1px#731154;
         margin: 2% 2% 5% 2%;
-        overflow: scroll;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         box-shadow: grey 2px 2px 60px 1px;
@@ -89,6 +89,7 @@
     .post-header {
         width: 275px;
         /* height: 100px; */
+        height: auto;
     }
     .post-title {
         /* padding-bottom: 10px; */
