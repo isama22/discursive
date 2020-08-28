@@ -33,10 +33,23 @@
   .nav-container {
     flex-direction: row;
     width: 49vw;
+    /* background-color: yellow; */
+    width: 300px;
   }
   .Nav-Bar {
-    width: 100%;
+    /* width: 100%; */
     margin: 0vw;
+  }
+  .NavBar-link {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* background-color: red; */
+    width: 150px;
+  }
+  .NavBar-welcome {
+    /* background-color: white; */
+    /* width: 400px; */
 
   }
 }
