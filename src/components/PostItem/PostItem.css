@@ -72,10 +72,10 @@
 @media screen and (max-width: 375px) {
     .post {
         width: 95%;
-        height: 20vh;
+        /* height: 20vh; */
         border: solid 1px#731154;
         margin: 2% 2% 5% 2%;
-        overflow-y: hidden;
+        overflow-y: scroll;
         display: flex;
         flex-direction: column;
         box-shadow: grey 2px 2px 60px 1px;
@@ -89,7 +89,6 @@
         width: 275px;
     }
     .post-title {
-        background-color: red;
         padding-bottom: 10px;
     }
 }
