@@ -45,7 +45,7 @@ class AddPostPage extends Component {
                 value={this.state.formData.title}
                 onChange={this.handleChange}
                 required
-                // maxLength="5"
+                maxLength="20"
               /> 
             </div>
             <div className='form-item'>
