@@ -86,7 +86,10 @@
         overflow: hidden;
     }
     .post-header {
-        background-color: aliceblue;
         width: 275px;
+    }
+    .post-title {
+        background-color: red;
+        padding-bottom: 10px;
     }
 }
