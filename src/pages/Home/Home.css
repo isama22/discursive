@@ -171,6 +171,7 @@
     }
     .mini-side-bar {
         margin-bottom: 20px;
+        position: sticky;
     }
     .post-container {
         width: 530px;
