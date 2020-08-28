@@ -159,12 +159,12 @@
 
 @media screen and (max-width: 375px){
     .Home {
-        margin: 0px 0px 0px 13px;
+        margin: 0px 0px 0px 16px;
         width: 370px;
 
     }
     .main-container {
-        margin: 0px;
+        margin: 10px 0px 0px 0px;
         width: 350px;
         height: 460px;
 
