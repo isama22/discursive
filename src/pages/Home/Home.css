@@ -196,6 +196,7 @@
         z-index: 1;
         /* width: 400px; */
         /* background-color: aqua; */
+        background-color: transparent;
 
     }
 }
