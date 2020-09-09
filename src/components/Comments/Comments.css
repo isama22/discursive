@@ -1,18 +1,11 @@
 .form-container {
-    /* margin: 25px; */
     padding: 12px;
     display: flex;
     justify-content: flex-start;
-    /* width: 250px; */
     width: 20vw;
-    /* border: none;
-    border-radius: 30px; */
-    /* background-color: black; */
 }
 
 .comment-form {
-    /* background-color: black; */
-    /* box-shadow: 0px 0px 100px 20px #d4cfbd; */
     display: flex;
     justify-content: center;
     flex-direction: row;

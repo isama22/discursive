@@ -1,23 +1,12 @@
 html, body {
   margin: 0px;
-  /* background-color: #e6ddc9; */
   background-color: #ffe5ee;
-  /* background-image: url(https://i.postimg.cc/8CygxHJ5/IMG-6452.jpg); */
-  /* background-image: url(https://i.postimg.cc/3rF6hdJM/Screen-Shot-2020-05-25-at-10-30-56-PM.png); */
-  /* background-image: url(https://i.postimg.cc/FFPFwkjK/Screen-Shot-2020-05-27-at-12-40-36-AM.png);
-  background-size: 100%;
-  background-repeat: no-repeat; */
   font-family: monospace;
 
 }
 .App {
   text-align: center;
 }
-
-/* header {
-  display: flex;
-  justify-content: flex-end;
-} */
 
 input {
   font-family: monospace;

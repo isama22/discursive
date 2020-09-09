@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import Select from 'react-select'
 import './AddPostPage.css'
 
 class AddPostPage extends Component {

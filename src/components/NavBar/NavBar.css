@@ -23,34 +23,19 @@
   padding-bottom: 5px;
 }
 
-.NavBar {
-  /* width: 300px; */
-  /* width: 50%; */
-  /* width: 49vw; */
-}
-
 @media screen and (max-width: 900px) {
   .nav-container {
     flex-direction: row;
     width: 49vw;
-    /* background-color: yellow; */
     width: 300px;
     background-color: transparent;
   }
   .Nav-Bar {
-    /* width: 100%; */
     margin: 0vw;
   }
   .NavBar-link {
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
-    /* background-color: red; */
     width: 150px;
-  }
-  .NavBar-welcome {
-    /* background-color: white; */
-    /* width: 400px; */
-
   }
 }

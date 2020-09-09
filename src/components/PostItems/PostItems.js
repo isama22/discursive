@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './PostItems.css'
 import PostItem from '../../components/PostItem/PostItem'
 
 class PostItems extends Component {

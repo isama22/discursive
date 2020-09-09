@@ -3,7 +3,6 @@
     flex-direction: column;
     background-color: transparent;
     width: 330vw;
-    /* overflow-y: scroll; */
 }
 
 @media screen and (max-width: 375px){

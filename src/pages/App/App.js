@@ -54,19 +54,6 @@ class App extends Component {
     }), () => this.props.history.push('/'))
   }
 
-
-  // handleAddPostComment = async (e) => {
-  //   e.preventDefault()
-  //   await postsAPI.addComment(e.target.id, this.state.postComment)
-  //   await this.handleGetAllPosts()
-  //   this.setState({ postComment: '' })
-  // }
-
-  // handleDeletePostComment = async (e) => {
-  //   await postsAPI.deleteComment(e.target.id, e.target.name)
-  //   this.handleGetAllPosts()
-  // }
-
   handleGetAllPosts = async () => {
     const posts = await postsAPI.getAll()
     this.setState({ posts: posts })
