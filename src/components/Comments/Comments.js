@@ -38,6 +38,7 @@ render(){
     return (
         <>
             <div className='all-comments-container'>
+                <hr></hr>
                 <div className='comments'>
                     {this.state.post && this.state.post.postComments.map(postComment =>
                         <PostComment
@@ -60,6 +61,7 @@ render(){
                                 value={this.state.postComment}
                                 className='comment-input'
                                 autoComplete='off'
+                                placeholder="add a comment"
                             />
                             <button
                                 className="add-btn"
