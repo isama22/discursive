@@ -1,7 +1,10 @@
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); */
+
 html, body {
   margin: 0px;
   background-color: #ffe5ee;
   font-family: monospace;
+  /* font-family: 'DM Sans', sans-serif; */
 
 }
 .App {

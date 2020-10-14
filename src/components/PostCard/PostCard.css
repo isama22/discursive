@@ -45,9 +45,12 @@
 }
 
 .post-description {
-    width: 35vw;
+    width: 33vw;
     text-align: left;
     margin-left: 1vw;
+    margin-top: 1vw;
+    background-color: #cad0ce;
+    padding-left: 1vw;
 }
 
 .card-links {

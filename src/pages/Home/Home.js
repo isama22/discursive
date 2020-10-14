@@ -15,11 +15,12 @@ class Home extends Component {
         const posts = await postsAPI.getAll()
         this.setState({ posts })
     }
-    
+
     render() {
         return (
             <>
                 <div className="Home">
+               
                     <div className="image">
                         <div className="nav">
                             <NavBar
@@ -28,40 +29,43 @@ class Home extends Component {
                                 handleSignupOrLogin={this.props.handleSignupOrLogin}
                             />
                         </div>
-                        <div className="main-container">
-                            <div className="side-bar">
-                                <div className="info">
-                                    <Link to="/"><img className="title-photo"
-                                        src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt="">
-                                    </img></Link>
-                                </div>
-                                <div className="info-body">
-                                    <div className="add-service" >
-                                        <Link className="add-service" to="/addpost">post something</Link>
-                                    </div>
-                                    <Link to="/contact">
-                                        <img className="second-photo"
-                                            src="https://i.stack.imgur.com/TsA97.gif" alt="">
-                                        </img>
-                                    </Link>
-                                </div>
-                            </div>
 
-                            <div className="post-container">
-                                <div className="mini-side-bar">
-                                    <Link className="mini-add-service" to="/addpost">post something</Link>
-                                    <Link className="contact" to="/contact">contact</Link>
+                       
+                            <div className="main-container">
+                                <div className="side-bar">
+                                    <div className="info">
+                                        <Link to="/"><img className="title-photo"
+                                            src="https://i.postimg.cc/9XBw0fy3/Screen-Shot-2020-05-27-at-12-41-22-AM.png" alt="">
+                                        </img></Link>
+                                    </div>
+                                    <div className="info-body">
+                                        <div className="add-service" >
+                                            <Link className="add-service" to="/addpost">post something</Link>
+                                        </div>
+                                        <Link to="/contact">
+                                            <img className="second-photo"
+                                                src="https://i.stack.imgur.com/TsA97.gif" alt="">
+                                            </img>
+                                        </Link>
+                                    </div>
                                 </div>
-                           
-                                
-                                <PostItems
-                                    posts={this.state.posts}
-                                    postComments={this.state.postComments}
-                                    handleGetAllPosts={this.props.handleGetAllPosts}
-                                />
+
+                                <div className="post-container">
+                                    <div className="mini-side-bar">
+                                        <Link className="mini-add-service" to="/addpost">post something</Link>
+                                        <Link className="contact" to="/contact">contact</Link>
+                                    </div>
+
+
+                                    <PostItems
+                                        posts={this.state.posts}
+                                        postComments={this.state.postComments}
+                                        handleGetAllPosts={this.props.handleGetAllPosts}
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
+                
                 </div>
             </>
         );
