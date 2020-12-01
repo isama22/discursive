@@ -1,5 +1,5 @@
 <h3>Discursive is a small text based forum for writers and other artists to compile and share their source material.</h3>
-<br><br>
+<br>
 As an adjective, discursive means to digress from subject to subject. This app is meant to be a collection of incomplete/in progress work, ideas, and references to it's pertaining material.
 <br><br>
 <strong>Technologies:</strong> Mongo, Express, React, Node, JWT authentication
