@@ -32,11 +32,12 @@ function PostCard({ post, handleDeletePost, user }) {
                 </div>
                 <div className="card-post-header">
                     <div className="author">
-                        <p className="card-post-creator">{post.creator}</p>
+                        {/* <p className="card-post-creator">{post.creator}</p> */}
+                        <Link to="/profile" className="card-post-creator">{post.creator}</Link>
                     </div>
                     <div className="detail-title">
                         <p className="card-post-title">{post.title}</p>
-
+                        
                     </div>
                     <div className="time">
                         <p>{moment(dateCreated.toLocaleString()).format('MM.DD.YYYY')}</p>
@@ -44,6 +45,7 @@ function PostCard({ post, handleDeletePost, user }) {
                 </div>
                 <div className="post-description">
                     <p>{post.description}</p>
+                <p>{user.posts.length}</p>
                 </div>
             </div>
         </>

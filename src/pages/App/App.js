@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from '../../pages/Home/Home'
 import PostDetail from '../../pages/PostDetail/PostDetail'
 import Contact from '../../pages/Contact/Contact'
+import Profile from '../../pages/Profile/Profile'
 import Loginpage from '../../pages/Loginpage/Loginpage'
 import Signuppage from '../../pages/Signuppage/Signuppage'
 import AddPostPage from '../../pages/AddPostPage/AddPostPage'
@@ -150,7 +151,14 @@ class App extends Component {
             exact path="/contact"
             render={() => (
               <Contact
-              user={this.state.user}
+                user={this.state.user}
+              />
+            )} />
+          <Route
+            exact path="/profile"
+            render={() => (
+              <Profile
+                user={this.state.user}
               />
             )} />
         </Switch>
